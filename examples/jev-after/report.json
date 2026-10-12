@@ -1,0 +1,705 @@
+{
+  "status": "complete",
+  "registry_version": "news-interpretation-0.1.0",
+  "backend": "fixture",
+  "synthetic_inputs": true,
+  "archive_mode": "synthetic",
+  "input_cutoff": "2026-10-10T12:40:00.000000Z",
+  "started_at": "2026-10-10T19:29:14.155199Z",
+  "company": {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "synthetic": true,
+    "available_at": "2026-10-10T11:00:00Z",
+    "evidence": [
+      {
+        "id": "profile-demand",
+        "quote": "In this invented scenario, CloudHarbor is a customer of NVIDIA AI accelerators. Its AI infrastructure spending can affect accelerator demand, but no conversion from spending to NVIDIA sales is supplied."
+      },
+      {
+        "id": "profile-policy",
+        "quote": "In this invented scenario, X100 accelerator sales to Orion account for 12% of NVIDIA annual revenue. Orion and X100 are fictional."
+      },
+      {
+        "id": "profile-supply",
+        "quote": "In this invented scenario, advanced packaging is a necessary input to NVIDIA accelerator shipments. No supplier capacity or revenue sensitivity is quantified."
+      }
+    ]
+  },
+  "input_hash": "48b000b65bb929b72d796d8da62befae334a4c24aa7942027a017502e1759412",
+  "question_registry_hash": "561a817420025d065582f17627eaf1e882a5d9cab93709b59a1a7a9837d45408",
+  "gate_threshold": 0.65,
+  "events": [
+    {
+      "event_id": "customer-capex",
+      "revision": 2,
+      "title": "[SYNTHETIC] CloudHarbor corrects its budget announcement",
+      "text_type": "synthetic_excerpt",
+      "text": "[SYNTHETIC] CloudHarbor corrected its FY2027 AI infrastructure budget to USD 21 billion, compared with its previously announced USD 20 billion plan. The earlier USD 24 billion figure was an error. No accelerator procurement allocation or market consensus is supplied.",
+      "claim_quote": "corrected its FY2027 AI infrastructure budget to USD 21 billion, compared with its previously announced USD 20 billion plan",
+      "assertion_status": "issuer_correction",
+      "evidence": [
+        {
+          "document_id": "1f9c1f8d20ff093cc705805103c37851f0cb4ffa4751d07eb7a2db95db646850",
+          "version_id": "0551f8f6aef332894a57189802e4781ec86eeac304b3d365a8c8f152ce14efab",
+          "url": "https://example.org/jev-synthetic/capex-correction",
+          "text": "[SYNTHETIC] CloudHarbor corrected its FY2027 AI infrastructure budget to USD 21 billion, compared with its previously announced USD 20 billion plan. The earlier USD 24 billion figure was an error. No accelerator procurement allocation or market consensus is supplied.",
+          "observed_at": "2026-10-10T12:30:00.000000Z",
+          "raw_response_path": "raw/34c428bbc0384cd2b4b615a4d6338c83/d0a494d448dc46f2b660926fc91d1ed4.response",
+          "content_hash": "722bc1f70f3a0017f2696353d2ece6a3ff5e76418f85b43d45232591b59e550a"
+        }
+      ],
+      "source_lineages": [
+        "cloudharbor-announcement"
+      ],
+      "superseded_evidence": [
+        {
+          "document_id": "3e6c9c03729f38390266dbfadba0efe1d970ac77c9a15b99d4ba5605a81d78ce",
+          "version_id": "810aa0d846b3ae1c4247d7fe579582260c8a31b0a5d62685540908398344d2fc",
+          "text": "[SYNTHETIC] Repeating CloudHarbor's announcement: its FY2027 AI infrastructure budget is now USD 24 billion, compared with its previously announced USD 20 billion plan. This story has no independent reporting.",
+          "observed_at": "2026-10-10T12:10:00.000000Z"
+        },
+        {
+          "document_id": "970113fa83cf74259a760bb1b07566456d657b1cd5c383bdd605374be009eadd",
+          "version_id": "668f1e0feacdbb30202464fd223fe56ff6e9898735464d10c034c41749c66857",
+          "text": "[SYNTHETIC] CloudHarbor announced that its FY2027 AI infrastructure budget is now USD 24 billion, compared with its previously announced USD 20 billion plan. No accelerator procurement allocation or market consensus is supplied.",
+          "observed_at": "2026-10-10T12:00:00.000000Z"
+        }
+      ],
+      "comparison": {
+        "status": "above_prior_plan",
+        "kind": "prior_issuer_plan",
+        "metric": "customer_ai_infrastructure_budget",
+        "period": "FY2027",
+        "unit": "USD billion",
+        "prior": 20,
+        "current": 21,
+        "change": 1,
+        "relative_change": 0.05,
+        "evidence_quote": "USD 21 billion, compared with its previously announced USD 20 billion plan",
+        "market_consensus": "not_supplied",
+        "stock_return_implication": "not_estimated"
+      },
+      "grouping": "supplied_synthetic_event_ids",
+      "stages": [
+        {
+          "stage": "routing",
+          "answers": {
+            "grounded_claim": {
+              "type": "noul",
+              "noul": 0.99
+            },
+            "relevance": {
+              "type": "choice",
+              "choice": "indirect",
+              "probabilities": {
+                "direct": 0.03333333333333333,
+                "indirect": 0.9,
+                "unrelated": 0.03333333333333333,
+                "unknown": 0.03333333333333333
+              },
+              "confidence": 0.8
+            },
+            "family": {
+              "type": "choice",
+              "choice": "customer_demand",
+              "probabilities": {
+                "customer_demand": 0.9,
+                "supply": 0.02,
+                "policy": 0.02,
+                "financial_results": 0.02,
+                "macro": 0.02,
+                "other": 0.02
+              },
+              "confidence": 0.8
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/001-01-routing-request.json",
+          "response_path": "calls/001-01-routing-response.json",
+          "response_hash": "dfc0161956ed40ecfd9c5edbbb37b1d18fb2e4f8fb83555b44e220f3cc50d54e"
+        },
+        {
+          "stage": "channels",
+          "answers": {
+            "revenue": {
+              "type": "choice",
+              "choice": "favorable",
+              "probabilities": {
+                "favorable": 0.9,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.025
+              },
+              "confidence": 0.8
+            },
+            "margin": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "discount_rate": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "scale_available": {
+              "type": "noul",
+              "noul": 0.15
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/002-01-channels-request.json",
+          "response_path": "calls/002-01-channels-response.json",
+          "response_hash": "eee5b49b1a8a37fb43ba88249b7c2abefd30081bfb0c9d9935249c374046688a"
+        }
+      ],
+      "materiality": null,
+      "economic_direction": "favorable",
+      "disposition": "conditional_interpretation",
+      "reason": "Conditional on the source assertion; market expectations and stock response are unestimated."
+    },
+    {
+      "event_id": "export-policy",
+      "revision": 1,
+      "title": "[SYNTHETIC] Fictional export rule covers X100 shipments to Orion",
+      "text_type": "synthetic_excerpt",
+      "text": "[SYNTHETIC] A fictional regulator announced an immediately effective prohibition on NVIDIA X100 accelerator shipments to Orion. No exemption, replacement revenue or earlier market expectation is supplied.",
+      "claim_quote": "an immediately effective prohibition on NVIDIA X100 accelerator shipments to Orion",
+      "assertion_status": "policy_announcement",
+      "evidence": [
+        {
+          "document_id": "d7239167c331d3bdfffe4076d71a1326306136084e42dc0b30eebc5e578f7da6",
+          "version_id": "4028e8500f27ea3f13187ef69aab65a0cd7c90ff64129e71557aafc12106b5f4",
+          "url": "https://example.org/jev-synthetic/policy",
+          "text": "[SYNTHETIC] A fictional regulator announced an immediately effective prohibition on NVIDIA X100 accelerator shipments to Orion. No exemption, replacement revenue or earlier market expectation is supplied.",
+          "observed_at": "2026-10-10T12:05:00.000000Z",
+          "raw_response_path": "raw/34c428bbc0384cd2b4b615a4d6338c83/b498c3e6481a47299f0a33e6f753e8f4.response",
+          "content_hash": "ade9ec56474adb777c43440b15354f6c3705674a099006e6c7046a1eb4b3d538"
+        }
+      ],
+      "source_lineages": [
+        "fictional-policy-notice"
+      ],
+      "superseded_evidence": [],
+      "comparison": {
+        "status": "unknown",
+        "market_consensus": "not_supplied"
+      },
+      "grouping": "supplied_synthetic_event_ids",
+      "stages": [
+        {
+          "stage": "routing",
+          "answers": {
+            "grounded_claim": {
+              "type": "noul",
+              "noul": 0.99
+            },
+            "relevance": {
+              "type": "choice",
+              "choice": "direct",
+              "probabilities": {
+                "direct": 0.9,
+                "indirect": 0.03333333333333333,
+                "unrelated": 0.03333333333333333,
+                "unknown": 0.03333333333333333
+              },
+              "confidence": 0.8
+            },
+            "family": {
+              "type": "choice",
+              "choice": "policy",
+              "probabilities": {
+                "customer_demand": 0.02,
+                "supply": 0.02,
+                "policy": 0.9,
+                "financial_results": 0.02,
+                "macro": 0.02,
+                "other": 0.02
+              },
+              "confidence": 0.8
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/003-02-routing-request.json",
+          "response_path": "calls/003-02-routing-response.json",
+          "response_hash": "5b7f4a40e503ea66b02a62cb534af59747321a8e3370a76862f486ba7de56f5c"
+        },
+        {
+          "stage": "channels",
+          "answers": {
+            "revenue": {
+              "type": "choice",
+              "choice": "adverse",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.9,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.025
+              },
+              "confidence": 0.8
+            },
+            "margin": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "discount_rate": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "scale_available": {
+              "type": "noul",
+              "noul": 0.95
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/004-02-channels-request.json",
+          "response_path": "calls/004-02-channels-response.json",
+          "response_hash": "430e7c0d9d1cd6e152f9eb70b728065d4e140911cfb71d336702c948de34a0cc"
+        },
+        {
+          "stage": "materiality",
+          "answers": {
+            "materiality": {
+              "type": "score",
+              "score": 2.48,
+              "legend": {
+                "0": "Negligible company exposure: under 1% of the stated company measure.",
+                "1": "Limited company exposure: 1% to under 5%.",
+                "2": "Moderate company exposure: 5% to under 10%.",
+                "3": "Substantial company exposure: 10% or more."
+              },
+              "probabilities": {
+                "0": 0.02,
+                "1": 0.08,
+                "2": 0.3,
+                "3": 0.6
+              },
+              "confidence": 0.5
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/005-02-materiality-request.json",
+          "response_path": "calls/005-02-materiality-response.json",
+          "response_hash": "2b26d6bbc553a3dcd978adcc4ebff0ff7269cfddde6a18be3b7f183b03577730"
+        }
+      ],
+      "materiality": {
+        "type": "score",
+        "score": 2.48,
+        "legend": {
+          "0": "Negligible company exposure: under 1% of the stated company measure.",
+          "1": "Limited company exposure: 1% to under 5%.",
+          "2": "Moderate company exposure: 5% to under 10%.",
+          "3": "Substantial company exposure: 10% or more."
+        },
+        "probabilities": {
+          "0": 0.02,
+          "1": 0.08,
+          "2": 0.3,
+          "3": 0.6
+        },
+        "confidence": 0.5
+      },
+      "economic_direction": "adverse",
+      "disposition": "conditional_interpretation",
+      "reason": "Conditional on the source assertion; market expectations and stock response are unestimated."
+    },
+    {
+      "event_id": "filing",
+      "revision": 1,
+      "title": "[SYNTHETIC] NVIDIA 8-K filing index entry",
+      "text_type": "filing_metadata",
+      "text": "",
+      "claim_quote": null,
+      "assertion_status": "metadata_only",
+      "evidence": [
+        {
+          "document_id": "313aca3cbc278dbae866ed2c847de2779110cd0373d2451b03e48549840d59e0",
+          "version_id": "1dfb42b847791f868f21c6e13bd8cd3eb6e48b07e7cac82282e2700538b10490",
+          "url": "https://example.org/jev-synthetic/filing-metadata",
+          "text": null,
+          "observed_at": "2026-10-10T12:16:00.000000Z",
+          "raw_response_path": "raw/34c428bbc0384cd2b4b615a4d6338c83/cab950bea6a9445b86b5af9bfa2cfc70.response",
+          "content_hash": "2d14a18092365403e215a6cda4b7560f2c3a3b310802429517d6b09d83dcbfd3"
+        }
+      ],
+      "source_lineages": [
+        "filing-index"
+      ],
+      "superseded_evidence": [],
+      "comparison": {
+        "status": "unknown",
+        "market_consensus": "not_supplied"
+      },
+      "grouping": "supplied_synthetic_event_ids",
+      "stages": [
+        {
+          "stage": "routing",
+          "answers": {
+            "grounded_claim": {
+              "type": "noul",
+              "noul": 0.02
+            },
+            "relevance": {
+              "type": "choice",
+              "choice": "direct",
+              "probabilities": {
+                "direct": 0.9,
+                "indirect": 0.03333333333333333,
+                "unrelated": 0.03333333333333333,
+                "unknown": 0.03333333333333333
+              },
+              "confidence": 0.8
+            },
+            "family": {
+              "type": "choice",
+              "choice": "other",
+              "probabilities": {
+                "customer_demand": 0.02,
+                "supply": 0.02,
+                "policy": 0.02,
+                "financial_results": 0.02,
+                "macro": 0.02,
+                "other": 0.9
+              },
+              "confidence": 0.8
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/006-03-routing-request.json",
+          "response_path": "calls/006-03-routing-response.json",
+          "response_hash": "9b673b96b658eee7be6fc47f25153573bf0a16f4b27ab4339433e1c88520865b"
+        }
+      ],
+      "materiality": null,
+      "economic_direction": "unknown",
+      "disposition": "insufficient_evidence",
+      "reason": "No substantive event text; retrieve the source document."
+    },
+    {
+      "event_id": "packaging-rumor",
+      "revision": 1,
+      "title": "[SYNTHETIC] Unverified account alleges a packaging interruption",
+      "text_type": "synthetic_excerpt",
+      "text": "[SYNTHETIC] An unverified online account alleges that advanced packaging deliveries used for NVIDIA accelerators have stopped. No named supplier, confirmation, duration or affected shipment volume is supplied.",
+      "claim_quote": "An unverified online account alleges that advanced packaging deliveries used for NVIDIA accelerators have stopped",
+      "assertion_status": "unverified_rumor",
+      "evidence": [
+        {
+          "document_id": "9d5a9a34bb665b78e89d145b79f8b168b85f18eaf36fd057a8f087b7c446eb9a",
+          "version_id": "0afad37f7e355178c9ace3eb30cddb225bb7b858b34d0db9d82c576771e3ea81",
+          "url": "https://example.org/jev-synthetic/rumor",
+          "text": "[SYNTHETIC] An unverified online account alleges that advanced packaging deliveries used for NVIDIA accelerators have stopped. No named supplier, confirmation, duration or affected shipment volume is supplied.",
+          "observed_at": "2026-10-10T12:08:00.000000Z",
+          "raw_response_path": "raw/34c428bbc0384cd2b4b615a4d6338c83/1217a73f919f437597c712b28d956386.response",
+          "content_hash": "441d846ea940fa28cf8b49be00f34525cab3c2d06e9f0139520363a4168b59e8"
+        }
+      ],
+      "source_lineages": [
+        "unverified-account"
+      ],
+      "superseded_evidence": [],
+      "comparison": {
+        "status": "unknown",
+        "market_consensus": "not_supplied"
+      },
+      "grouping": "supplied_synthetic_event_ids",
+      "stages": [
+        {
+          "stage": "routing",
+          "answers": {
+            "grounded_claim": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "relevance": {
+              "type": "choice",
+              "choice": "indirect",
+              "probabilities": {
+                "direct": 0.03333333333333333,
+                "indirect": 0.9,
+                "unrelated": 0.03333333333333333,
+                "unknown": 0.03333333333333333
+              },
+              "confidence": 0.8
+            },
+            "family": {
+              "type": "choice",
+              "choice": "supply",
+              "probabilities": {
+                "customer_demand": 0.02,
+                "supply": 0.9,
+                "policy": 0.02,
+                "financial_results": 0.02,
+                "macro": 0.02,
+                "other": 0.02
+              },
+              "confidence": 0.8
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/007-04-routing-request.json",
+          "response_path": "calls/007-04-routing-response.json",
+          "response_hash": "a953c6612c754145969193c1fc5f9c5f9f5480c6af7e3869bcb96407e3095715"
+        },
+        {
+          "stage": "channels",
+          "answers": {
+            "revenue": {
+              "type": "choice",
+              "choice": "adverse",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.9,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.025
+              },
+              "confidence": 0.8
+            },
+            "margin": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "discount_rate": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "favorable": 0.025,
+                "adverse": 0.025,
+                "mixed": 0.025,
+                "unchanged": 0.025,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "scale_available": {
+              "type": "noul",
+              "noul": 0.05
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/008-04-channels-request.json",
+          "response_path": "calls/008-04-channels-response.json",
+          "response_hash": "e15f09913ee34d05b7a34b4978b4c50e7d54ca04268a5c5f972c3bb98a9db9eb"
+        }
+      ],
+      "materiality": null,
+      "economic_direction": "adverse",
+      "disposition": "unverified_rumor",
+      "reason": "The claim is an unverified rumor; its conditional channel is kept separate."
+    },
+    {
+      "event_id": "park",
+      "revision": 1,
+      "title": "[SYNTHETIC] Local park adds a walking path",
+      "text_type": "synthetic_excerpt",
+      "text": "[SYNTHETIC] A local park added a walking path. No technology company, commercial supplier or macroeconomic policy is involved.",
+      "claim_quote": "A local park added a walking path",
+      "assertion_status": "reported_claim",
+      "evidence": [
+        {
+          "document_id": "8cc1ce11ccc2eef583df693e62f35d35d556b25c84a6c3a5847d7aa13ce88715",
+          "version_id": "90d73719d758baf291b667f9f7b84493ff37d1c1c41591fa00bf3be3c9c7bc12",
+          "url": "https://example.org/jev-synthetic/unrelated",
+          "text": "[SYNTHETIC] A local park added a walking path. No technology company, commercial supplier or macroeconomic policy is involved.",
+          "observed_at": "2026-10-10T12:14:00.000000Z",
+          "raw_response_path": "raw/34c428bbc0384cd2b4b615a4d6338c83/d5fd55a8e2b94f12be930f95bab3d858.response",
+          "content_hash": "d5aec099a5331c6307abc133be3e71c50993fcec0120b83d91630dc68104f574"
+        }
+      ],
+      "source_lineages": [
+        "local-news"
+      ],
+      "superseded_evidence": [],
+      "comparison": {
+        "status": "unknown",
+        "market_consensus": "not_supplied"
+      },
+      "grouping": "supplied_synthetic_event_ids",
+      "stages": [
+        {
+          "stage": "routing",
+          "answers": {
+            "grounded_claim": {
+              "type": "noul",
+              "noul": 0.99
+            },
+            "relevance": {
+              "type": "choice",
+              "choice": "unrelated",
+              "probabilities": {
+                "direct": 0.03333333333333333,
+                "indirect": 0.03333333333333333,
+                "unrelated": 0.9,
+                "unknown": 0.03333333333333333
+              },
+              "confidence": 0.8
+            },
+            "family": {
+              "type": "choice",
+              "choice": "other",
+              "probabilities": {
+                "customer_demand": 0.02,
+                "supply": 0.02,
+                "policy": 0.02,
+                "financial_results": 0.02,
+                "macro": 0.02,
+                "other": 0.9
+              },
+              "confidence": 0.8
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/009-05-routing-request.json",
+          "response_path": "calls/009-05-routing-response.json",
+          "response_hash": "a2759a6e50dd1147d3c814af55f5e703c236b3cae11e9de15b500f6b805259bc"
+        }
+      ],
+      "materiality": null,
+      "economic_direction": "unknown",
+      "disposition": "unrelated",
+      "reason": "No supported company connection in supplied evidence."
+    },
+    {
+      "event_id": "vague-capacity",
+      "revision": 1,
+      "title": "[SYNTHETIC] Packaging supplier announces a capacity update",
+      "text_type": "headline",
+      "text": "[SYNTHETIC] Packaging supplier announces a capacity update",
+      "claim_quote": "Packaging supplier announces a capacity update",
+      "assertion_status": "headline_only",
+      "evidence": [
+        {
+          "document_id": "8f8c857523c8adebe7a8663d7998e366f2f63e8fad63e8f0057a3a3d03545d1b",
+          "version_id": "8b6a72a32f033afd324db82b53bf93754fe917e320ca0bf89ea83c43378e3cd4",
+          "url": "https://example.org/jev-synthetic/vague-headline",
+          "text": "[SYNTHETIC] Packaging supplier announces a capacity update",
+          "observed_at": "2026-10-10T12:12:00.000000Z",
+          "raw_response_path": "raw/34c428bbc0384cd2b4b615a4d6338c83/b8903e6863564853ae6c802da3ee61fb.response",
+          "content_hash": "2660bef43798c29d2ee739c231798356f77cd5b0f6ff376babc3476b82abf5c9"
+        }
+      ],
+      "source_lineages": [
+        "headline-feed"
+      ],
+      "superseded_evidence": [],
+      "comparison": {
+        "status": "unknown",
+        "market_consensus": "not_supplied"
+      },
+      "grouping": "supplied_synthetic_event_ids",
+      "stages": [
+        {
+          "stage": "routing",
+          "answers": {
+            "grounded_claim": {
+              "type": "noul",
+              "noul": 0.2
+            },
+            "relevance": {
+              "type": "choice",
+              "choice": "unknown",
+              "probabilities": {
+                "direct": 0.03333333333333333,
+                "indirect": 0.03333333333333333,
+                "unrelated": 0.03333333333333333,
+                "unknown": 0.9
+              },
+              "confidence": 0.8
+            },
+            "family": {
+              "type": "choice",
+              "choice": "supply",
+              "probabilities": {
+                "customer_demand": 0.02,
+                "supply": 0.9,
+                "policy": 0.02,
+                "financial_results": 0.02,
+                "macro": 0.02,
+                "other": 0.02
+              },
+              "confidence": 0.8
+            }
+          },
+          "model": "scripted-fixture-not-a-model",
+          "request_path": "calls/010-06-routing-request.json",
+          "response_path": "calls/010-06-routing-response.json",
+          "response_hash": "d75f91d6843039657cef95b9b0b9ccc5752be39a0e2a657229cb764cdf39b450"
+        }
+      ],
+      "materiality": null,
+      "economic_direction": "unknown",
+      "disposition": "insufficient_evidence",
+      "reason": "The substantive-claim or company-connection gate did not pass."
+    }
+  ],
+  "return_probabilities": null,
+  "price_target": null,
+  "forecast_status": "not_estimated",
+  "coverage": "not_a_feed_completeness_audit",
+  "combined": {
+    "favorable_events": [
+      "customer-capex"
+    ],
+    "adverse_events": [
+      "export-policy"
+    ],
+    "rumor_events": [
+      "packaging-rumor"
+    ],
+    "insufficient_events": [
+      "filing",
+      "vague-capacity"
+    ],
+    "unrelated_events": [
+      "park"
+    ],
+    "economic_balance": "mixed_channels",
+    "aggregation": "Supplied unique active events; rumors separate; no addition of probabilities or ordinal scores.",
+    "return_forecast": "not_estimated"
+  },
+  "completed_at": "2026-10-10T19:29:14.167296Z",
+  "evaluation_calls": 10
+}

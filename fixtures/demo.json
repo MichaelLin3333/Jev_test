@@ -1,0 +1,82 @@
+{
+  "synthetic": true,
+  "observed_times": [
+    "2026-10-09T12:00:00.000000Z",
+    "2026-10-09T12:15:00.000000Z",
+    "2026-10-09T12:30:00.000000Z"
+  ],
+  "company": {
+    "ticker": "NVDA",
+    "name": "NVIDIA",
+    "cik": "1045810"
+  },
+  "gdelt_responses": [
+    {
+      "articles": [
+        {
+          "url": "https://example.org/synthetic-chip-capacity?utm_source=demo",
+          "title": "[SYNTHETIC] Packaging supplier announces a capacity update",
+          "seendate": "20261009T115000Z",
+          "domain": "example.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        },
+        {
+          "url": "https://example.org/synthetic-rates",
+          "title": "[SYNTHETIC] Policy announcement changes the rates outlook",
+          "seendate": "20261009T115500Z",
+          "domain": "example.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        }
+      ]
+    },
+    {
+      "articles": [
+        {
+          "url": "https://example.org/synthetic-chip-capacity?utm_source=other",
+          "title": "[SYNTHETIC] Packaging supplier announces a capacity update",
+          "seendate": "20261009T115000Z",
+          "domain": "example.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        }
+      ]
+    },
+    {
+      "articles": [
+        {
+          "url": "https://example.org/synthetic-chip-capacity",
+          "title": "[SYNTHETIC] Packaging supplier revises the capacity update",
+          "seendate": "20261009T115000Z",
+          "domain": "example.org",
+          "language": "English",
+          "sourcecountry": "United States"
+        }
+      ]
+    }
+  ],
+  "sec_response": {
+    "cik": "1045810",
+    "name": "NVIDIA",
+    "filings": {
+      "recent": {
+        "accessionNumber": [
+          "0000000000-26-000001"
+        ],
+        "form": [
+          "8-K"
+        ],
+        "filingDate": [
+          "2026-10-09"
+        ],
+        "acceptanceDateTime": [
+          "2026-10-09T11:40:00.000Z"
+        ],
+        "primaryDocument": [
+          "synthetic-example.htm"
+        ]
+      }
+    }
+  }
+}

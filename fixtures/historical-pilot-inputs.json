@@ -1,0 +1,71 @@
+{
+  "dataset_version": "historical-pilot-0.1.0",
+  "retrieved_on": "2026-10-11",
+  "retrieval_date_timezone": "America/New_York",
+  "text_kind": "curated_paraphrase",
+  "availability": "Reconstructed from dated historical issuer releases. These are not collector-observed historical snapshots or archived page versions.",
+  "scope": "Three deliberately selected classic shocks for a qualitative smoke test. Input evidence excludes subsequent share-price reactions and outcome labels.",
+  "cases": [
+    {
+      "id": "nvda-2023-05-24-guidance",
+      "company": "NVIDIA",
+      "ticker": "NVDA",
+      "evidence_time": "2023-05-24T20:20:00Z",
+      "evidence_time_precision": "issuer_wire_minute",
+      "source_urls": [
+        "https://investor.nvidia.com/news/press-release-details/2023/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2024/",
+        "https://www.globenewswire.com/news-release/2023/05/24/2675692/0/en/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2024.html"
+      ],
+      "text": "NVIDIA projected revenue of $11.00 billion, plus or minus 2%, for fiscal Q2 2024 after reporting $7.19 billion in Q1. Management described increasing demand for accelerated-computing and generative-AI products and said it was raising supply.",
+      "claim_quote": "NVIDIA projected revenue of $11.00 billion, plus or minus 2%, for fiscal Q2 2024 after reporting $7.19 billion in Q1.",
+      "quote_provenance": "Exact passage from the researcher-authored summary above; not a verbatim issuer quotation.",
+      "profile": {
+        "as_of": "2023-05-24T20:20:00Z",
+        "text": "NVIDIA supplies GPU-based computing products for data centers and gaming. Its fiscal Q1 2024 Data Center revenue was $4.28 billion of $7.19 billion total company revenue.",
+        "source_urls": ["https://investor.nvidia.com/news/press-release-details/2023/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2024/"]
+      },
+      "text_kind": "curated_paraphrase"
+    },
+    {
+      "id": "meta-2022-02-02-outlook",
+      "company": "Meta Platforms",
+      "ticker": "FB",
+      "evidence_time": "2022-02-02T21:05:00Z",
+      "evidence_time_precision": "issuer_wire_minute",
+      "source_urls": [
+        "https://investor.atmeta.com/investor-news/press-release-details/2022/Meta-Reports-Fourth-Quarter-and-Full-Year-2021-Results/default.aspx",
+        "https://www.prnewswire.com/news-releases/meta-reports-fourth-quarter-and-full-year-2021-results-301474305.html"
+      ],
+      "text": "Meta projected first-quarter 2022 revenue of $27-29 billion and described headwinds from competition, movement toward lower-monetizing Reels, ad-targeting limitations, and advertiser budget pressure. Fourth-quarter operating margin fell to 37% from 46% a year earlier.",
+      "claim_quote": "Meta projected first-quarter 2022 revenue of $27-29 billion and described headwinds from competition, movement toward lower-monetizing Reels, ad-targeting limitations, and advertiser budget pressure.",
+      "quote_provenance": "Exact passage from the researcher-authored summary above; not a verbatim issuer quotation.",
+      "profile": {
+        "as_of": "2022-02-02T21:05:00Z",
+        "text": "Meta operates Facebook, Instagram, Messenger and WhatsApp. Advertising generated $114.934 billion of its $117.929 billion total revenue in 2021, making advertising demand and monetization central company exposures.",
+        "source_urls": ["https://investor.atmeta.com/investor-news/press-release-details/2022/Meta-Reports-Fourth-Quarter-and-Full-Year-2021-Results/default.aspx"]
+      },
+      "text_kind": "curated_paraphrase"
+    },
+    {
+      "id": "aapl-2019-01-02-guidance-cut",
+      "company": "Apple",
+      "ticker": "AAPL",
+      "evidence_time": "2019-01-02T23:59:00Z",
+      "evidence_time_precision": "date_afterclose",
+      "evidence_time_note": "Conservative reconstructed availability cutoff on the issuer's dated release day, before the next regular trading session; not an asserted exact publication minute.",
+      "source_urls": [
+        "https://www.apple.com/newsroom/2019/01/letter-from-tim-cook-to-apple-investors/",
+        "https://www.apple.com/newsroom/2018/11/apple-reports-fourth-quarter-results/"
+      ],
+      "text": "Apple reduced its fiscal Q1 2019 revenue estimate to approximately $84 billion, below the earlier $89-93 billion range. Management attributed the shortfall to weaker-than-expected iPhone sales, mainly in Greater China, and fewer upgrades in some developed markets.",
+      "claim_quote": "Apple reduced its fiscal Q1 2019 revenue estimate to approximately $84 billion, below the earlier $89-93 billion range.",
+      "quote_provenance": "Exact passage from the researcher-authored summary above; not a verbatim issuer quotation.",
+      "profile": {
+        "as_of": "2019-01-02T23:59:00Z",
+        "text": "Apple sells iPhone hardware and services. Management attributed its revenue shortfall to iPhone sales, with most of the shortfall occurring in Greater China. The company therefore has direct exposure to iPhone upgrades and Chinese consumer demand.",
+        "source_urls": ["https://www.apple.com/newsroom/2019/01/letter-from-tim-cook-to-apple-investors/"]
+      },
+      "text_kind": "curated_paraphrase"
+    }
+  ]
+}

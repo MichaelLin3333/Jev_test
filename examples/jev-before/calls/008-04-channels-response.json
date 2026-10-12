@@ -1,0 +1,50 @@
+{
+  "model": "scripted-fixture-not-a-model",
+  "answers": {
+    "revenue": {
+      "type": "choice",
+      "choice": "adverse",
+      "probabilities": {
+        "favorable": 0.025,
+        "adverse": 0.9,
+        "mixed": 0.025,
+        "unchanged": 0.025,
+        "unknown": 0.025
+      },
+      "confidence": 0.8
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "probabilities": {
+        "favorable": 0.025,
+        "adverse": 0.025,
+        "mixed": 0.025,
+        "unchanged": 0.025,
+        "unknown": 0.9
+      },
+      "confidence": 0.8
+    },
+    "discount_rate": {
+      "type": "choice",
+      "choice": "unknown",
+      "probabilities": {
+        "favorable": 0.025,
+        "adverse": 0.025,
+        "mixed": 0.025,
+        "unchanged": 0.025,
+        "unknown": 0.9
+      },
+      "confidence": 0.8
+    },
+    "scale_available": {
+      "type": "noul",
+      "noul": 0.05
+    }
+  },
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "fixture": true
+}

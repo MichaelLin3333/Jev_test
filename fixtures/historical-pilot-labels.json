@@ -1,0 +1,82 @@
+{
+  "dataset_version": "historical-pilot-0.1.0",
+  "retrieved_on": "2026-10-11",
+  "retrieval_date_timezone": "America/New_York",
+  "usage": "Evaluation only. Do not send this file, its labels, or its outcome URLs to the model.",
+  "semantic_label_policy": "Researcher-specified expectations based on supplied economic claims. They describe conditional business channels, not guaranteed stock returns. They were recorded before pilot inference, but the researcher knew the famous historical outcomes.",
+  "market_label_policy": "Next regular-session close-to-close percentage changes as rounded in contemporaneous reporting, not independent price-data calculations. The preceding close predates each after-hours issuer release. Benchmark subtraction would be simple market adjustment, not a causal estimate or beta-adjusted abnormal return.",
+  "limitations": [
+    "Three selected extreme events are a smoke test, not a representative sample.",
+    "Historical model training may include these famous outcomes, even if outcome text is excluded from prompts.",
+    "Researcher-curated short summaries bypass full-stream retrieval, article extraction and event selection.",
+    "Other news and market conditions also influenced each next-session return."
+  ],
+  "cases": [
+    {
+      "case_id": "nvda-2023-05-24-guidance",
+      "expected": {
+        "grounded_claim": true,
+        "relevance": "direct",
+        "family": "financial_results",
+        "revenue": "favorable"
+      },
+      "semantic_note": "The forecast and rising demand support a favorable revenue opportunity. Sequential forecast-versus-reported revenue is not an analyst-consensus surprise or a like-for-like guidance revision.",
+      "next_session": {
+        "date": "2023-05-25",
+        "return_pct_reported": 24.0,
+        "precision": "rounded_reported",
+        "source": "Reuters, syndicated by Investing.com",
+        "source_url": "https://www.investing.com/news/stock-market-news/wall-street-ends-higher-as-nvidia-sparks-rush-for-ai-stocks-3090585",
+        "benchmark": {
+          "name": "S&P 500",
+          "return_pct_reported": 0.88,
+          "source_url": "https://www.investing.com/news/stock-market-news/wall-street-ends-higher-as-nvidia-sparks-rush-for-ai-stocks-3090585"
+        }
+      }
+    },
+    {
+      "case_id": "meta-2022-02-02-outlook",
+      "expected": {
+        "grounded_claim": true,
+        "relevance": "direct",
+        "family": "financial_results",
+        "revenue": "adverse"
+      },
+      "semantic_note": "The specified targeting, competition and monetization headwinds are adverse to revenue opportunity; this does not assert an absolute revenue decline. Planned 2022 capital expenditures were unchanged from prior guidance and are not treated as a new capex shock.",
+      "next_session": {
+        "date": "2022-02-03",
+        "return_pct_reported": -26.4,
+        "precision": "rounded_reported",
+        "source": "Reuters, syndicated by MarketScreener",
+        "source_url": "https://www.marketscreener.com/news/latest/Wall-St-ends-winning-run-as-Facebook-forecast-halts-tech-led-recovery-37731510/",
+        "benchmark": {
+          "name": "S&P 500",
+          "return_pct_reported": -2.44,
+          "source_url": "https://www.marketscreener.com/news/latest/Wall-St-ends-winning-run-as-Facebook-forecast-halts-tech-led-recovery-37731510/"
+        }
+      }
+    },
+    {
+      "case_id": "aapl-2019-01-02-guidance-cut",
+      "expected": {
+        "grounded_claim": true,
+        "relevance": "direct",
+        "family": "financial_results",
+        "revenue": "adverse"
+      },
+      "semantic_note": "The explicit downward revision supports an adverse revenue channel. The $84 billion estimate is about 7.7% below the old $91 billion guidance midpoint; that arithmetic is not a forecast return.",
+      "next_session": {
+        "date": "2019-01-03",
+        "return_pct_reported": -10.0,
+        "precision": "rounded_reported",
+        "source": "Reuters, syndicated by Yahoo",
+        "source_url": "https://www.yahoo.com/news/apple-shares-slide-iphone-maker-135451459.html",
+        "benchmark": {
+          "name": "S&P 500",
+          "return_pct_reported": -2.48,
+          "source_url": "https://za.investing.com/news/stock-market-news/us-stockswall-st-plunges-as-factory-data-apple-warning-fuel-slowdown-fears-1379926"
+        }
+      }
+    }
+  ]
+}

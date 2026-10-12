@@ -1,0 +1,62 @@
+{
+  "companies": [
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "cik": "1045810"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "cik": "789019"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "cik": "320193"
+    }
+  ],
+  "collection": {
+    "initial_lookback_hours": 24,
+    "overlap_minutes": 60
+  },
+  "gdelt": {
+    "enabled": true,
+    "queries": [
+      {
+        "id": "nvidia",
+        "lane": "direct",
+        "query": "(NVIDIA OR NVDA OR GeForce) sourcelang:english"
+      },
+      {
+        "id": "microsoft",
+        "lane": "direct",
+        "query": "(Microsoft OR Azure OR Copilot) sourcelang:english"
+      },
+      {
+        "id": "apple",
+        "lane": "direct",
+        "query": "(\"Apple Inc\" OR iPhone OR MacBook) sourcelang:english"
+      },
+      {
+        "id": "tech_dependencies",
+        "lane": "industry",
+        "query": "(semiconductor OR \"advanced packaging\" OR \"AI infrastructure\") sourcelang:english"
+      },
+      {
+        "id": "macro_policy",
+        "lane": "macro",
+        "query": "(\"export controls\" OR \"interest rates\" OR inflation) sourcelang:english"
+      }
+    ]
+  },
+  "sec": {
+    "enabled": true,
+    "user_agent_env": "SEC_USER_AGENT",
+    "forms": [
+      "8-K",
+      "10-K",
+      "10-Q"
+    ]
+  }
+}
