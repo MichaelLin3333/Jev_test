@@ -1,0 +1,33 @@
+{
+  "method": "Qualitative news coverage study. Three cases per existing category. Category and polarity are selection hypotheses, not ground-truth return labels, and are not sent to Jev. Primary-source factual paraphrases are used, with commentary about missing evidence kept outside model inputs. All cases target NVIDIA. No realized stock outcomes, hidden expected answers, or future event developments are included. Historical evaluations are not a point-in-time accuracy backtest; the model may retain historical knowledge. Market expectations and prices are unavailable in this study.",
+  "created_at": "2026-10-18T01:56:00.309359+00:00",
+  "settings": {
+    "RUN_MODEL": true,
+    "MODEL_NAME": "jev-latest",
+    "MAX_CALLS": 4,
+    "TIMEOUT_SECONDS": 30,
+    "STAGE_ORDER": [
+      "event",
+      "economics",
+      "magnitude",
+      "forecast"
+    ],
+    "STOP_AFTER": null,
+    "STOP_ON_WEAK_EVENT": false
+  },
+  "coverage": {
+    "results_guidance": 3,
+    "product_pricing": 3,
+    "contract_partnership": 3,
+    "merger_acquisition": 3,
+    "supply_operations": 3,
+    "investment_financing": 3,
+    "legal_policy": 3,
+    "macro": 3,
+    "other_unknown": 3
+  },
+  "source_code_sha256_at_start": "759fa78610ae8bbbe300a4aa85f06e86d5c9c40dd4149425003cefd6eb39a6c1",
+  "company_profile_source": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000010/nvda-2020x10k.htm",
+  "record_layout": "Each numbered JSON contains the exact CASE, research metadata outside the model input, actual per-stage requests/responses, and execution results. summary.csv is a derived comparison.",
+  "forecast_window": "Next regular-session open through the fifth regular-session close; raw return, inclusive neutral band +/-1%. No future prices are supplied."
+}

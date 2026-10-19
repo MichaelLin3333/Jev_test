@@ -1,0 +1,217 @@
+{
+  "completed_cases": 27,
+  "planned_cases": 27,
+  "api_attempts": 118,
+  "forecast_choices": {
+    "insufficient_evidence": 27
+  },
+  "event_types": {
+    "results_guidance": 3,
+    "product_pricing": 2,
+    "contract_partnership": 4,
+    "merger_acquisition": 3,
+    "supply_operations": 3,
+    "investment_financing": 4,
+    "legal_policy": 3,
+    "macro": 3,
+    "other_unknown": 2
+  },
+  "revenue_choices": {
+    "favorable": 8,
+    "adverse": 8,
+    "unknown": 11
+  },
+  "margin_choices": {
+    "unknown": 22,
+    "adverse": 4,
+    "mixed": 1
+  },
+  "input_tokens": 259893,
+  "output_tokens": 19712,
+  "script_outside_CASE_unchanged": true,
+  "interpretation": "Qualitative model behavior only. Selection labels are not realized stock outcomes; no prediction accuracy is measured.",
+  "default_CASE_left_in_script": "nvda-results-2023-ai-outlook",
+  "api_attempts_successful_records": 108,
+  "api_attempts_archived_failed_records": 10,
+  "case_attempt_records": 32,
+  "archived_failed_attempt_records": 5,
+  "unique_cases_with_validation_retries": 4,
+  "input_tokens_successful_records": 238281,
+  "output_tokens_successful_records": 17350,
+  "token_scope": "input_tokens/output_tokens include all 32 saved attempts; successful-record subtotals are separate.",
+  "planned_category_coverage": {
+    "results_guidance": 3,
+    "product_pricing": 3,
+    "contract_partnership": 3,
+    "merger_acquisition": 3,
+    "supply_operations": 3,
+    "investment_financing": 3,
+    "legal_policy": 3,
+    "macro": 3,
+    "other_unknown": 3
+  },
+  "selection_polarities": {
+    "favorable": 3,
+    "adverse": 4,
+    "mixed": 3,
+    "favorable_conditional": 1,
+    "adverse_competitive_conditional": 1,
+    "mixed_customer_and_competitor": 1,
+    "favorable_strategic_with_integration_risk": 1,
+    "mixed_strategic_opportunity_cost_and_approval": 1,
+    "adverse_termination_charge_with_retained_license": 1,
+    "potentially_favorable": 2,
+    "adverse_risk_with_liquidity_benefit": 1,
+    "adverse_export_access_and_charge": 1,
+    "favorable_conditional_market_access": 1,
+    "adverse_small_fine_and_disclosure_risk_boundary": 1,
+    "mixed_crisis_and_easing": 1,
+    "potentially_adverse": 1,
+    "potentially_favorable_market_structure": 1,
+    "adverse_headline_neutral_control": 1,
+    "positive_tone_neutral_control": 1
+  },
+  "validation_failure_counts": {
+    "Invalid Jev response: probabilities must sum to one.": 4,
+    "Invalid Jev response: Choice selection is not a highest-probability option.": 1
+  },
+  "retry_policy": "Only locally validation-rejected cases were rerun with the identical CASE, prompts and settings. All five unsuccessful attempts remain archived; current records contain the latest successful attempts. No economic or forecast answer was selected for its direction.",
+  "input_method": "Primary-source factual paraphrases with source links, rather than verbatim full articles. One shared company profile based on information available in February 2020. Coverage and polarity metadata are kept outside model input.",
+  "qualitative_findings": [
+    {
+      "observation": "The economic stage distinguishes favorable guidance from adverse results.",
+      "evidence": [
+        {
+          "case_id": "nvda-results-2023-ai-outlook",
+          "path": "economics.response.answers.revenue.probabilities.favorable",
+          "value": 0.82
+        },
+        {
+          "case_id": "nvda-results-2022-gaming-warning",
+          "path": "economics.response.answers.revenue.probabilities.adverse",
+          "value": 0.93
+        },
+        {
+          "case_id": "nvda-results-2022-gaming-warning",
+          "path": "economics.response.answers.margin.probabilities.adverse",
+          "value": 0.94
+        }
+      ]
+    },
+    {
+      "observation": "Opposite H20 policy developments produce opposite revenue assessments while license assurance remains conditional.",
+      "evidence": [
+        {
+          "case_id": "nvda-policy-h20-restriction-2025-04-15",
+          "path": "economics.response.answers.revenue.probabilities.adverse",
+          "value": 0.99
+        },
+        {
+          "case_id": "nvda-policy-h20-license-assurance-2025-07-14",
+          "path": "economics.response.answers.revenue.probabilities.favorable",
+          "value": 0.92
+        },
+        {
+          "case_id": "nvda-policy-h20-license-assurance-2025-07-14",
+          "path": "event.response.answers.event_status.choice",
+          "value": "proposed"
+        }
+      ]
+    },
+    {
+      "observation": "Possible cash-flow overreach: partner production value is not established as NVIDIA capital expenditure, and an accounting provision does not itself establish new cash outflow.",
+      "evidence": [
+        {
+          "case_id": "nvda-operations-2025-us-manufacturing",
+          "path": "economics.response.answers.investment_cash.probabilities.adverse",
+          "value": 0.79
+        },
+        {
+          "case_id": "nvda-operations-2024-blackwell-yield",
+          "path": "economics.response.answers.investment_cash.probabilities.adverse",
+          "value": 0.81
+        }
+      ],
+      "qualification": "Outputs do not expose the reasoning. Separate supply commitments can create a cash mechanism, but incremental amounts and timing are not established."
+    },
+    {
+      "observation": "Taxonomy boundaries need review: a rival product announcement becomes a partnership; the CEO's personal trades become investment/financing.",
+      "evidence": [
+        {
+          "case_id": "nvda-product-2023-amd-mi300x",
+          "path": "event.response.answers.event_type.choice",
+          "value": "contract_partnership"
+        },
+        {
+          "case_id": "nvda-other-20240617-ceo-personal-sales",
+          "path": "event.response.answers.event_type.choice",
+          "value": "investment_financing"
+        }
+      ],
+      "qualification": "Coverage labels are human selection hypotheses, not independently adjudicated ground truth."
+    },
+    {
+      "observation": "Operating-margin uncertainty is not necessarily a failure when the article supplies only gross margin.",
+      "evidence": [
+        {
+          "case_id": "nvda-results-2025-growth-margin",
+          "path": "economics.response.answers.margin.probabilities.unknown",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "observation": "Macro easing is handled unevenly; the sample does not establish repeatability.",
+      "evidence": [
+        {
+          "case_id": "nvda-macro-20200315-emergency-easing",
+          "path": "economics.response.answers.discount_rate.probabilities.favorable",
+          "value": 0.5
+        },
+        {
+          "case_id": "nvda-macro-20240918-rate-cut",
+          "path": "economics.response.answers.discount_rate.probabilities.unknown",
+          "value": 0.67
+        }
+      ]
+    },
+    {
+      "observation": "Named-company relevance can be separated from economic significance in a control case.",
+      "evidence": [
+        {
+          "case_id": "nvda-other-20260129-ieee-honor",
+          "path": "event.response.answers.economic_event.noul",
+          "value": 0.19
+        },
+        {
+          "case_id": "nvda-other-20260129-ieee-honor",
+          "path": "event.response.answers.company_connection.noul",
+          "value": 0.83
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "All 27 final forecasts abstained. Market expectations, stock prices and pre-decision reactions were explicitly unavailable; these runs do not establish predictive accuracy or failure under richer inputs.",
+    "Selection hypotheses describe possible economic direction, not realized stock outcomes. No future return labels were collected.",
+    "Historical prompts restrict later knowledge, but historical knowledge retained by the model cannot be eliminated.",
+    "One final successful run per case; repeats were only for validation failures, not a systematic stability study.",
+    "Source-based paraphrases do not test the effect of lengthy full articles or an unfiltered news corpus.",
+    "The shared 2020 company profile controls one input but omits later company developments unless present in each case.",
+    "Publication day is treated as known by the end of that UTC day; exact publication times and event-study trading alignment were not reconstructed.",
+    "Probabilities shown are model outputs, not demonstrated calibration."
+  ],
+  "audit": {
+    "checked_at": "2026-10-18T02:01:56.276934+00:00",
+    "all_27_four_stage_runs_complete": true,
+    "all_saved_questions_match_current_unchanged_script": true,
+    "all_stage_CASE_fields_and_cumulative_prior_answers_match": true,
+    "archived_retry_CASE_inputs_identical": true,
+    "summary_csv_matches_current_records": true,
+    "current_CASE_matches_first_record": true,
+    "no_pending_output_temp_files": true,
+    "current_script_sha256": "3303cca280f72b5ff76bafa816f51f03f0afadd84256d89dea67474193a59f90",
+    "current_script_AST_excluding_CASE_sha256": "5165cced1d57e8f04bba20a2bbae7078df0c2112773f403976cef41f3be159c0",
+    "outside_CASE_unchanged_check": "The batch runner verified original versus final ASTs after replacing only the CASE value; this reporting pass makes no script writes."
+  }
+}

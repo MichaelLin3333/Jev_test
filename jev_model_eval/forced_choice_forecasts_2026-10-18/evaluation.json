@@ -1,0 +1,173 @@
+{
+  "status": "scored",
+  "evaluated_at": "2026-10-18T15:04:07.371030+00:00",
+  "n": 27,
+  "model": "jev-1.13.0",
+  "method": "Raw NVDA price return = fifth regular-session Close / first regular-session Open after decision_time - 1; entry session counts as one. Inclusive neutral band +/-1%.",
+  "label_order": [
+    "up",
+    "flat",
+    "down"
+  ],
+  "actual_label_counts": {
+    "up": 12,
+    "down": 13,
+    "flat": 2
+  },
+  "predicted_label_counts": {
+    "up": 11,
+    "down": 9,
+    "flat": 7
+  },
+  "forced_model": {
+    "n": 27,
+    "correct": 6,
+    "accuracy": 0.2222222222222222,
+    "balanced_accuracy": 0.16025641025641027,
+    "recall_by_actual_class": {
+      "up": 0.25,
+      "flat": 0.0,
+      "down": 0.23076923076923078
+    },
+    "confusion_matrix_rows_actual_columns_predicted": {
+      "up": {
+        "up": 3,
+        "flat": 3,
+        "down": 6
+      },
+      "flat": {
+        "up": 2,
+        "flat": 0,
+        "down": 0
+      },
+      "down": {
+        "up": 6,
+        "flat": 4,
+        "down": 3
+      }
+    },
+    "multiclass_brier_score_sum_over_three_classes": 1.1632444444444443
+  },
+  "constant_baselines": {
+    "up": {
+      "n": 27,
+      "correct": 12,
+      "accuracy": 0.4444444444444444,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix_rows_actual_columns_predicted": {
+        "up": {
+          "up": 12,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 2,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "multiclass_brier_score_sum_over_three_classes": 1.1111111111111112
+    },
+    "flat": {
+      "n": 27,
+      "correct": 2,
+      "accuracy": 0.07407407407407407,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 0.0,
+        "flat": 1.0,
+        "down": 0.0
+      },
+      "confusion_matrix_rows_actual_columns_predicted": {
+        "up": {
+          "up": 0,
+          "flat": 12,
+          "down": 0
+        },
+        "flat": {
+          "up": 0,
+          "flat": 2,
+          "down": 0
+        },
+        "down": {
+          "up": 0,
+          "flat": 13,
+          "down": 0
+        }
+      },
+      "multiclass_brier_score_sum_over_three_classes": 1.8518518518518519
+    },
+    "down": {
+      "n": 27,
+      "correct": 13,
+      "accuracy": 0.48148148148148145,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 0.0,
+        "flat": 0.0,
+        "down": 1.0
+      },
+      "confusion_matrix_rows_actual_columns_predicted": {
+        "up": {
+          "up": 0,
+          "flat": 0,
+          "down": 12
+        },
+        "flat": {
+          "up": 0,
+          "flat": 0,
+          "down": 2
+        },
+        "down": {
+          "up": 0,
+          "flat": 0,
+          "down": 13
+        }
+      },
+      "multiclass_brier_score_sum_over_three_classes": 1.037037037037037
+    }
+  },
+  "brier_definition": "Mean across cases of sum over up/flat/down of (predicted probability minus one-hot actual outcome)^2; range 0 to 2, lower is better.",
+  "original_forecast_coverage": 0.0,
+  "original_forecast_accuracy": null,
+  "forced_forecast_coverage": 1.0,
+  "unique_entry_exit_windows": 26,
+  "high_probability_subset": {
+    "definition": "Maximum model probability >= 0.90; descriptive only, not a validated calibration estimate.",
+    "n": 10,
+    "correct": 3,
+    "case_ids": [
+      "nvda-results-2023-ai-outlook",
+      "nvda-results-2022-gaming-warning",
+      "nvda-product-2023-amd-mi300x",
+      "nvda-partnership-openai-loi-2025-09-22",
+      "nvda-partnership-amd-openai-2025-10-06",
+      "nvda-operations-2024-blackwell-yield",
+      "nvda-policy-h20-restriction-2025-04-15",
+      "nvda-policy-h20-license-assurance-2025-07-14",
+      "nvda-macro-20220615-rate-hike",
+      "nvda-other-20240617-ceo-personal-sales"
+    ]
+  },
+  "all_forecasts_completed_before_price_fetch": true,
+  "future_prices_in_model_input": false,
+  "caveats": [
+    "Small purposively selected historical sample from one stock; no broad prediction or calibration claim.",
+    "Model may know historical outcomes despite source-only instructions.",
+    "Duplicate and overlapping return windows are dependent; 27 cases are not 27 independent observations.",
+    "This window excludes announcement-day and overnight adjustment before the entry open.",
+    "Yahoo/yfinance data are a research data source and can be revised; downloaded data are archived.",
+    "Price return excludes cash dividends; no split occurred inside any scored window.",
+    "Constant baselines use the same labels and windows. They are not trading-profit simulations."
+  ]
+}

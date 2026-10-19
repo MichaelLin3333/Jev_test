@@ -1,9 +1,21 @@
+# Python and local settings
 __pycache__/
 *.py[cod]
+.venv/
+.env
+.env.*
+
+# Local collection data and generated reports
 data/
 demo-data/
 jev-demo-data/
 reports/
 exports/
-.venv/
-.env
+
+# Retired material: kept locally, excluded from future commits
+/examples/
+/fixtures/
+/tests/
+/HISTORICAL_PILOT_REPORT.md
+/VALIDATION.md
+/jev-news-historical-pilot.zip

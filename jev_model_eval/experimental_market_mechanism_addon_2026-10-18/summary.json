@@ -1,0 +1,80 @@
+{
+  "experiment": "experimental_market_mechanism_addon",
+  "cases": 27,
+  "model": "jev-1.13.0",
+  "api_attempts": 85,
+  "validation_failures": 4,
+  "transport_failures": 0,
+  "branch_coverage": {
+    "control": 27,
+    "addon_forecast": 27
+  },
+  "control_metrics": {
+    "scored": 27,
+    "correct": 6,
+    "accuracy": 0.2222222222222222,
+    "balanced_accuracy": 0.16025641025641027,
+    "multiclass_brier_score": 1.1649777777777781,
+    "confusion_matrix_rows_actual": {
+      "up": {
+        "up": 3,
+        "flat": 3,
+        "down": 6
+      },
+      "flat": {
+        "up": 2,
+        "flat": 0,
+        "down": 0
+      },
+      "down": {
+        "up": 7,
+        "flat": 3,
+        "down": 3
+      }
+    }
+  },
+  "addon_metrics": {
+    "scored": 27,
+    "correct": 6,
+    "accuracy": 0.2222222222222222,
+    "balanced_accuracy": 0.16025641025641027,
+    "multiclass_brier_score": 1.1610370370370373,
+    "confusion_matrix_rows_actual": {
+      "up": {
+        "up": 3,
+        "flat": 3,
+        "down": 6
+      },
+      "flat": {
+        "up": 2,
+        "flat": 0,
+        "down": 0
+      },
+      "down": {
+        "up": 6,
+        "flat": 4,
+        "down": 3
+      }
+    }
+  },
+  "paired_changes": {
+    "paired_cases": 27,
+    "paired_scored_cases": 27,
+    "control_vs_archived_flips": 1,
+    "addon_vs_control_flips": 3,
+    "wrong_to_right": 1,
+    "right_to_wrong": 1
+  },
+  "input_tokens": 244680,
+  "output_tokens": 10930,
+  "existing_scripts_unchanged": true,
+  "source_records_unchanged": true,
+  "limitations": [
+    "Small selected historical sample; known outcomes informed development.",
+    "One fresh control per case does not establish repeatability or statistical causation.",
+    "Missing expectations and market observations remain missing.",
+    "Conditional flow recognition is not evidence of actual orders or a guaranteed return.",
+    "The original next-session-open to fifth-session-close target excludes initial repricing.",
+    "Duplicate and overlapping windows are dependent; raw price moves are not causal news effects."
+  ]
+}

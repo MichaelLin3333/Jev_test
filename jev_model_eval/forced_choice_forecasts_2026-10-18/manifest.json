@@ -1,0 +1,44 @@
+{
+  "experiment": "forced_choice_forecast_only",
+  "created_at": "2026-10-18T15:01:26.793405+00:00",
+  "source_folder": "C:\\Users\\Michael Lin\\projects\\jev-news-pipeline\\jev_model_eval\\qualitative_news_tests_2026-10-17",
+  "output_folder": "C:\\Users\\Michael Lin\\projects\\jev-news-pipeline\\jev_model_eval\\forced_choice_forecasts_2026-10-18",
+  "planned_cases": 27,
+  "requested_model": "jev-1.13.0",
+  "timeout_seconds": 30,
+  "old_instruction_tail": "Choose insufficient_evidence if the evidence does not support this future-return judgment.",
+  "new_instruction_tail": "Select the most likely outcome among up, flat and down for the return window defined in forecast_target. You must select one outcome even when the available evidence is incomplete. Do not invent missing facts. Represent uncertainty through the probability distribution. Choose flat only when a return within the neutral band is the most likely outcome, rather than because evidence is missing.",
+  "removed_option": "insufficient_evidence",
+  "retained_option_order": [
+    "up",
+    "flat",
+    "down"
+  ],
+  "retry_policy": "At most three attempts per case, only after local response validation failures. No automatic retries after HTTP, network or timeout errors. All attempts retained.",
+  "pairing": "Reuse the exact saved forecast state including article, profile and cumulative stages1–3 answers. No other stages are run. Pin model to original resolved version. Keep all other question text and outcome definitions.",
+  "repository_script_hashes_before": {
+    "jev_model_eval\\call_jev_tmp.py": "88e9bae802d0625a195629d97015e682a79f45966bb51b0740abe88dbaf31a95",
+    "jev_model_eval\\check_api.py": "b7f1ecefb2ad784d8981986232a12c8f3519ae16718d045745ce5871eb2d05f5",
+    "jev_model_eval\\fetch_gdelt_tmp.py": "e573230a57281075f3c03e0022a331bb4be96aad1224a3cbf885b194171d59a6",
+    "jev_model_eval\\run_eval.py": "3303cca280f72b5ff76bafa816f51f03f0afadd84256d89dea67474193a59f90",
+    "jev_model_eval\\save_api_key.py": "3f7ab51e0e70d369884cd657a01132f65454f479edc2b19fe89b19e888037b07",
+    "jev_news\\jev_client.py": "826441ac72537acaa3b4fe639a73f4ba6a6bbd581a5e10f1db46a839ce32beb1"
+  },
+  "future_price_policy": "No realized prices are added to any request. Prices and outcome labels may be fetched and stored for evaluation only after all forecasts finish.",
+  "evaluation_method": "Raw NVDA price return = fifth regular-session Close / first regular-session Open after decision_time - 1; entry session counts as one. Inclusive neutral band +/-1%.",
+  "market_data_request": {
+    "ticker": "NVDA",
+    "start": "2020-03-01",
+    "end": "2026-02-14",
+    "interval": "1d",
+    "auto_adjust": false,
+    "back_adjust": false,
+    "actions": true,
+    "prepost": false,
+    "repair": false,
+    "rounding": false,
+    "timeout": 30,
+    "raise_errors": true
+  },
+  "price_fetch_after_all_forecasts": true
+}

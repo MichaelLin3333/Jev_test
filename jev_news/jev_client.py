@@ -16,7 +16,7 @@ import urllib.error
 import urllib.request
 from typing import Callable
 
-MODEL = "jev-1.13.0"
+MODEL = "jev-latest"
 ENDPOINT = "https://api.typesafe.ai/v1/systemone"
 PROBABILITY_TOLERANCE = 1e-6
 Transport = Callable[[dict, dict, float], dict]

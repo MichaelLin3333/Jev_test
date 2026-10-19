@@ -1,0 +1,57 @@
+{
+  "experiment": "forced_choice_forecast_only",
+  "updated_at": "2026-10-18T15:01:31.653420+00:00",
+  "planned_cases": 27,
+  "completed_cases": 27,
+  "execution_statuses": {
+    "complete": 27
+  },
+  "api_attempts": 27,
+  "validation_failures": 0,
+  "original_forecast_choices": {
+    "insufficient_evidence": 27
+  },
+  "forced_forecast_choices": {
+    "up": 11,
+    "down": 9,
+    "flat": 7
+  },
+  "requested_model": "jev-1.13.0",
+  "returned_models": {
+    "jev-1.13.0": 27
+  },
+  "all_states_identical": true,
+  "all_earlier_answers_frozen": true,
+  "input_tokens": 63116,
+  "output_tokens": 1053,
+  "repository_scripts_unchanged": true,
+  "original_records_unchanged": true,
+  "evaluation_status": "scored",
+  "interpretation": "Descriptive historical scoring of forced decisions on the original forecast window; not a prospective or independent validation of predictive ability.",
+  "limitations": [
+    "27 selected historical NVIDIA cases; not an independent or prospective validation sample.",
+    "Historical model knowledge cannot be eliminated by instructions.",
+    "Same dates and overlapping windows make some observations dependent.",
+    "Missing expectations and pre-decision market context are unchanged from the original experiment.",
+    "Three-way probabilities are new outputs, not renormalized four-way outputs.",
+    "No model-reported probability is assumed calibrated by this small sample."
+  ],
+  "scored_cases": 27,
+  "realized_label_counts": {
+    "up": 12,
+    "down": 13,
+    "flat": 2
+  },
+  "forced_accuracy": 0.2222222222222222,
+  "forced_correct": 6,
+  "forced_balanced_accuracy": 0.16025641025641027,
+  "forced_multiclass_brier_score": 1.1632444444444443,
+  "constant_baseline_accuracies": {
+    "up": 0.4444444444444444,
+    "flat": 0.07407407407407407,
+    "down": 0.48148148148148145
+  },
+  "unique_entry_exit_windows": 26,
+  "market_data_file": "market_data_NVDA_daily.json",
+  "evaluation_file": "evaluation.json"
+}
