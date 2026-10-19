@@ -1,0 +1,94 @@
+{
+  "case_id": "AMD-2023-10-19-4e97ce7c71",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.685664648617935,
+    "flat": 0.1157751868876243,
+    "down": 0.19856016449444083
+  },
+  "requests": [
+    "ba3f4c8cf373c70de678219531e220bd17313119a2dff8d9161dd111a10a8e49"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.36
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.71
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.68,
+      "probabilities": {
+        "positive": 0.25,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.74
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.78,
+      "probabilities": {
+        "positive": 0.18,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.8200000000000001
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.55,
+      "probabilities": {
+        "positive": 0.64,
+        "negative": 0.02,
+        "mixed": 0.07,
+        "unchanged": 0.0,
+        "unknown": 0.27
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.12
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "realized",
+      "confidence": 0.41,
+      "probabilities": {
+        "plan": 0.29,
+        "binding": 0.1,
+        "realized": 0.53,
+        "canceled": 0.0,
+        "unknown": 0.08
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "dc99f4abb0d15df19cccfe4c0e340d1270409db9f8198d26a4378212bc2ce6e5",
+  "recorded_at": "2026-10-19T16:02:38.909892+00:00"
+}

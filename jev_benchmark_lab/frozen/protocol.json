@@ -1,0 +1,167 @@
+{
+  "version": "jev-lab-1",
+  "created_before_new_returns": true,
+  "model": "jev-1.13.0",
+  "seed": 1701,
+  "universe": [
+    "NVDA",
+    "AAPL",
+    "AMD",
+    "META",
+    "MSFT"
+  ],
+  "date_range": [
+    "2023-01-01",
+    "2025-12-31"
+  ],
+  "splits": {
+    "train": {
+      "start": "2023-01-01",
+      "end": "2024-06-30",
+      "issuer_quota_per_company": 14
+    },
+    "validation": {
+      "start": "2024-07-01",
+      "end": "2025-06-30",
+      "issuer_quota_per_company": 8
+    },
+    "test": {
+      "start": "2025-07-01",
+      "end": "2025-12-31",
+      "issuer_quota_per_company": 5
+    }
+  },
+  "controls": {
+    "description": "One unrelated NASA Astronomy Picture of the Day text per target company per split. Fifteen distinct dated source items; no copied prior synthetic controls.",
+    "train_dates": [
+      "2023-03-15",
+      "2023-06-15",
+      "2023-09-15",
+      "2023-12-15",
+      "2024-03-15"
+    ],
+    "validation_dates": [
+      "2024-08-15",
+      "2024-10-15",
+      "2024-12-15",
+      "2025-03-15",
+      "2025-06-15"
+    ],
+    "test_dates": [
+      "2025-07-15",
+      "2025-08-15",
+      "2025-09-15",
+      "2025-10-15",
+      "2025-11-15"
+    ]
+  },
+  "source_policy": {
+    "title_stratification": "Before any return acquisition, prioritize hard adverse-action titles (layoffs, restructuring, restrictions, termination, losses, decline) within seven-day blocks, then other risk/policy titles, then financial results, then other news. Reserve one risk-oriented and one financial-results article in each company/split where such sources exist, choosing by seeded hash; fill other slots with the original deterministic evenly spaced dates. This uses text-side categories only, never returns or expected price directions. Empty strata are reported and filled from dated candidates before freeze.",
+    "sources": {
+      "NVDA": "https://nvidianews.nvidia.com/news?year={year}&page={page}",
+      "AAPL": "https://www.apple.com/newsroom/archive/?page={page}",
+      "AMD": "https://ir.amd.com/news-events/press-releases?year={year}&page={page}",
+      "META": "https://about.fb.com/news/{year}/page/{page}/",
+      "MSFT": "https://blogs.microsoft.com/blog/{year}/page/{page}/"
+    },
+    "selection": "Discover all listed primary-source archive pages for 2023-2025 (bounded 100 pages/year; Apple 100 global pages). Sort source date then URL; collapse each issuer's releases within seven calendar days into a block, choosing the smallest seeded SHA256 URL within the block. This conservative grouping treats a week of releases as one event. Remove legacy source URLs and NVIDIA dates within seven days of old cases. In each company/split select deterministic evenly spaced ranks across the remaining dated blocks, over-requesting only as needed for fixed text-quality exclusions. No return, future price, semantic expected answer, or Jev prediction is used in selection.",
+    "text": "Extract the publisher's article body or an explicitly labeled leading excerpt, capped at 10000 characters on a paragraph boundary. Minimum 350 characters for issuer articles, 150 for NASA controls. No generated summaries. Preserve raw HTML, extracted-text hash, retrieval time, displayed publication date/time, modified time when available, and extraction selector.",
+    "date_cutoff": "23:59:59 America/New_York on displayed publication date, even when exact time is available. This conservative date-only convention does not prove historical text fidelity. first_observed_at is today's actual retrieval, never backdated.",
+    "company_context": "Fixed minimal business descriptions written before labeling, supported by the companies' own newsroom/IR identification. No current fundamentals, forecasts, valuations, or analyst expectations are invented.",
+    "exclusions": [
+      "outside date range",
+      "duplicate canonical URL or article-text hash",
+      "same issuer seven-day event block",
+      "previously inspected legacy URL or nearby NVIDIA case date",
+      "missing publication date",
+      "non-article or inaccessible response",
+      "extracted article too short",
+      "purge earlier-split cases whose fifth-session label window reaches the next split start"
+    ],
+    "replacements": "Only inaccessible/invalid text candidates may be replaced deterministically before dataset freeze and before any new return download. After freeze no case is replaced or removed: missing prices, split windows and failed forecasts remain reported."
+  },
+  "target": {
+    "calendar": "XNYS from exchange_calendars 4.12; all five equities are US listed with aligned regular US sessions",
+    "entry": "First regular session opening timestamp strictly after cutoff",
+    "exit": "Fifth regular session closing price, counting entry as session one",
+    "return": "exit_close / entry_open - 1",
+    "classes": {
+      "up": "return > 0.01",
+      "flat": "-0.01 <= return <= 0.01",
+      "down": "return < -0.01"
+    },
+    "prices": "Yahoo Finance via yfinance 0.2.66; auto_adjust=False, actions=True, repair=False. Archive downloads. Use vendor split-adjusted Open and Close, excluding cash dividends; exclude from scoring any window with a reported split (no replacement). Market features use only observations with session close <= cutoff, and only ratios/volatility, so rescaling historical price units does not change them.",
+    "missing": "No forward filling, interpolating or inventing bars. A missing entry or exit, nonpositive/nonfinite price, missing pre-cutoff history, or split window gets an explicit status and remains in coverage accounting. Target scoring and market-feature eligibility are separate.",
+    "interpretation": "Subsequent raw price movement after the next opening; not the initial announcement reaction, causal news effect, dividend-inclusive return or simulated trading profit."
+  },
+  "evaluation": {
+    "label_order": [
+      "up",
+      "flat",
+      "down"
+    ],
+    "primary": "Mean sum over all three classes of (probability - one_hot_label)^2; range 0-2; lower is better",
+    "secondary": [
+      "accuracy",
+      "balanced accuracy over represented actual classes",
+      "confusion matrix",
+      "forecast coverage",
+      "label coverage"
+    ],
+    "failed_forecasts": "Do not fabricate probabilities. Report covered-case Brier and accuracy plus coverage. For validation ranking, assign loss 2 to an unreturned/invalid forecast with an available label, so failures cannot improve selection by hiding difficult cases.",
+    "abstention": "Separate policy only: accept a valid forecast iff maximum class probability >= 0.60. Report coverage, conditional accuracy and Brier separately; flat is never abstention.",
+    "baselines": [
+      "legacy four-stage forced-choice Jev",
+      "always up",
+      "always flat",
+      "always down",
+      "training-only empirical class frequencies",
+      "market-only regularized multinomial logistic regression, C=0.1"
+    ],
+    "market_features": [
+      "stock returns over 1,5,20 sessions",
+      "stock 20-session realized daily volatility",
+      "SPY returns over 1,5,20 sessions",
+      "SPY 20-session realized daily volatility",
+      "stock-minus-SPY returns over 5,20 sessions"
+    ],
+    "fit": "Median imputation and standardization fitted on training only. LogisticRegression C=0.1, max_iter=2000, random_state=1701, no class weighting. Candidate stronger shrinkage uses C=0.01. No model is refit on validation before final testing; all fitted predictors remain training-only.",
+    "final": "During development only training and validation labels are created/read. Select best Jev strategy by failure-penalized validation Brier, resolve ties by earlier iteration. Freeze selection, model artifacts/configuration, source hashes and prediction code. Then acquire test-window prices and evaluate predeclared baselines plus selected Jev strategy and its matched no-Jev ablation in one final pass. No tuning after final results."
+  },
+  "response_policy": {
+    "identity": "Exact jev-1.13.0 response model; existing typed-response validator reused after explicit version verification",
+    "validation": "All required question IDs/types, finite values, complete exact class keys, probabilities in [0,1] summing to one within 1e-6, highest-probability choice, valid usage. Never normalize rejected answers.",
+    "attempts": 3,
+    "retry": "At most three identical-request attempts for invalid response, HTTP 429/5xx or transport failure. Backoff 2 then 5 seconds; respect Retry-After up to 60 seconds. Stop auth/permission or other 4xx immediately. Archive every request and raw response/error; no retry based on correctness or confidence.",
+    "caching": "SHA256 of exact model,state,questions. Reuse completed validated responses, including unchanged stage judgments. Failed requests retain their attempt history and are not automatically reset by restarting.",
+    "parallelism": 3
+  },
+  "candidate_budget": 4,
+  "planned_candidates": [
+    {
+      "id": "single_direct",
+      "change": "Remove the three intermediary calls; retain the legacy final forecast prompt and the same source/context"
+    },
+    {
+      "id": "shrunk_direct",
+      "change": "Blend single-direct probabilities 50/50 with training empirical class frequencies to reduce overconfidence; no extra Jev calls"
+    },
+    {
+      "id": "market_plus_jev",
+      "change": "Use atomic Jev economic/evidence features alongside the unchanged market-only logistic predictor, C=0.1; compare exactly the same model without Jev features"
+    },
+    {
+      "id": "market_plus_jev_strong",
+      "change": "Change only logistic regularization to C=0.01; record matched market-only C=0.01 ablation"
+    }
+  ],
+  "historical_caveats": [
+    "Present-day retrieved article versions may contain later changes even when their displayed publication dates are old",
+    "Jev may have learned these events or outcomes during training",
+    "Issuer newsrooms are promotional and not a representative independent-news corpus",
+    "Five companies, 150 intended cases and a small final split permit only exploratory conclusions",
+    "Cross-company events may share macro/industry exposure despite conservative source grouping",
+    "Source accessibility and surviving archived pages can create selection bias",
+    "Yahoo historical prices may be revised; all data vintages are recorded"
+  ]
+}

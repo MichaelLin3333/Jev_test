@@ -1,0 +1,50 @@
+{
+  "case_id": "META-2023-10-05-d402e7ef31",
+  "iteration": 4,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.93,
+    "flat": 0.06,
+    "down": 0.01
+  },
+  "requests": [
+    "70e5df4fffffec3bd1029e0b684a73fd9f1721214ae2ae1123c9ca5e33d47acc",
+    "f882b4c9ef4a8a35e611420225ce91e387189aa15fd7450483674d9cc47a902c"
+  ],
+  "assessments": {
+    "bull_evidence": {
+      "type": "noul",
+      "noul": 0.59
+    },
+    "bear_evidence": {
+      "type": "noul",
+      "noul": 0.35
+    },
+    "bull_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.42,
+      "probabilities": {
+        "positive": 0.44,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.01,
+        "unknown": 0.54
+      }
+    },
+    "bear_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.54,
+      "probabilities": {
+        "positive": 0.2,
+        "negative": 0.14,
+        "mixed": 0.02,
+        "unchanged": 0.01,
+        "unknown": 0.63
+      }
+    }
+  },
+  "input_sha256": "f58fcf4a2fc8d62a2429d8f0a6db57ee2f882227ac79104b730af06cc042be3b",
+  "recorded_at": "2026-10-19T16:03:16.986528+00:00"
+}

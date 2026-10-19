@@ -1,0 +1,7 @@
+{
+  "iteration": 4,
+  "strategy": "market_plus_jev_strong",
+  "observed_failure": "Text-model training Brier=0.4294139013278966, validation Brier=0.6697973282771632, using only 75 training cases. Additional features risk unstable fitting.",
+  "change": "Change only C from 0.1 to 0.01; cache the same Jev judgments; also fit matched C=0.01 market-only ablation.",
+  "expected": "Stronger shrinkage may reduce variance; no guarantee of validation improvement."
+}

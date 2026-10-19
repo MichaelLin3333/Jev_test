@@ -1,0 +1,94 @@
+{
+  "case_id": "AAPL-2024-02-21-fb72cb9fce",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.6113636911473823,
+    "flat": 0.14974686430341902,
+    "down": 0.2388894445491986
+  },
+  "requests": [
+    "45763ea64587600150ebcfcd85e209446ebb2743b64153f3f125c43000c62e19"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.31
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.69
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.86,
+      "probabilities": {
+        "positive": 0.09,
+        "negative": 0.01,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.89
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.92,
+      "probabilities": {
+        "positive": 0.06,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.9400000000000001
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "negative",
+      "confidence": 0.31,
+      "probabilities": {
+        "positive": 0.17,
+        "negative": 0.45,
+        "mixed": 0.04,
+        "unchanged": 0.0,
+        "unknown": 0.34
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.14
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "realized",
+      "confidence": 0.5,
+      "probabilities": {
+        "plan": 0.3,
+        "binding": 0.06,
+        "realized": 0.6,
+        "canceled": 0.0,
+        "unknown": 0.04
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "1aaa56e5fdb1304aaa8d0e8365ae541b68887d9f40b0f71964760fee448e791a",
+  "recorded_at": "2026-10-19T16:02:44.767922+00:00"
+}

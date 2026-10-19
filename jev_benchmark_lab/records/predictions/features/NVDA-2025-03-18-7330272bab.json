@@ -1,0 +1,99 @@
+{
+  "case_id": "NVDA-2025-03-18-7330272bab",
+  "status": "ok",
+  "features": [
+    0.61,
+    0.92,
+    0.03,
+    0.69,
+    0.31,
+    0.0,
+    0.96,
+    -0.06,
+    0.9400000000000001,
+    0.03,
+    0.97,
+    0.01,
+    0.99,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.61
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.92
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.03
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.61,
+      "probabilities": {
+        "favorable": 0.69,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.31
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.95,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.01,
+        "mixed": 0.02,
+        "unchanged": 0.0,
+        "unknown": 0.96
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.92,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.06,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.9400000000000001
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "favorable": 0.03,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    }
+  },
+  "requests": [
+    "d477ad48876ff5c02af31a4a291d8a7d583a2d957b884c469a1d0596ffa8aa9f"
+  ],
+  "strategy_input_sha256": "156017dd58f320234e0b0098d6f0c6de0850586b590ff078c05ec70e1cd60e30",
+  "created_at": "2026-10-19T15:01:05.687066+00:00"
+}

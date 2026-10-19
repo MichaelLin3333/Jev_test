@@ -1,0 +1,18 @@
+{
+  "iteration": 10,
+  "name": "retained_branch_ensemble",
+  "change": "Equal-probability average of the three earlier candidates with best validation accuracy, breaking ties with the declared ranking. No new fitting or calls.",
+  "questions": {
+    "ensemble": "Equal probability average of the three retained earlier branches; no new questions or optimized weights."
+  },
+  "created_at": "2026-10-19T16:06:17.856563+00:00",
+  "previous_best": 1,
+  "observed_failure": "Best development strategy 1 has full-coverage validation accuracy 0.5333, balanced accuracy 0.3417; target is 0.70. Confusion matrix: {'up': {'up': 23, 'flat': 0, 'down': 1}, 'flat': {'up': 6, 'flat': 0, 'down': 0}, 'down': {'up': 14, 'flat': 0, 'down': 1}}.",
+  "expected_behavior": "Equal averaging of retained branches may improve robustness without optimizing more weights.",
+  "adaptive_wording_from_aggregate_feedback": "Explicitly examine a plausible adverse economic path and bearish market/relative trend; favorable issuer language must not eliminate the down outcome.",
+  "parents": [
+    1,
+    7,
+    3
+  ]
+}

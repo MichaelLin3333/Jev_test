@@ -1,0 +1,50 @@
+{
+  "case_id": "NVDA-2024-10-23-bbc88f6fc2",
+  "iteration": 4,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.96,
+    "flat": 0.03,
+    "down": 0.01
+  },
+  "requests": [
+    "e9b5df664c0989f0bd4c74f78aead22b17e5df144b96851651162dfe5abf35cf",
+    "426c0864ddacbe6e558035e5594693b41f344888f7f4fcfe405d802cf5ee028e"
+  ],
+  "assessments": {
+    "bull_evidence": {
+      "type": "noul",
+      "noul": 0.59
+    },
+    "bear_evidence": {
+      "type": "noul",
+      "noul": 0.3
+    },
+    "bull_news_channel": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.52,
+      "probabilities": {
+        "positive": 0.62,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.38
+      }
+    },
+    "bear_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.39,
+      "probabilities": {
+        "positive": 0.38,
+        "negative": 0.09,
+        "mixed": 0.01,
+        "unchanged": 0.01,
+        "unknown": 0.51
+      }
+    }
+  },
+  "input_sha256": "e52ba52ed690aa977672c1660b5be87122756c5d6c1db6d82d60ba576020eeef",
+  "recorded_at": "2026-10-19T16:03:41.433016+00:00"
+}

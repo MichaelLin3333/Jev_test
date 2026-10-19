@@ -1,0 +1,99 @@
+{
+  "case_id": "META-2023-03-14-38e320de4c",
+  "status": "ok",
+  "features": [
+    0.93,
+    0.7,
+    0.09,
+    -0.53,
+    0.35,
+    0.64,
+    0.16,
+    0.44999999999999996,
+    0.41,
+    -0.12,
+    0.57,
+    -0.02,
+    0.96,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.93
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.7
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.09
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "adverse",
+      "confidence": 0.42,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.54,
+        "mixed": 0.1,
+        "unchanged": 0.0,
+        "unknown": 0.35
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.59,
+      "probabilities": {
+        "favorable": 0.67,
+        "adverse": 0.03,
+        "mixed": 0.14,
+        "unchanged": 0.0,
+        "unknown": 0.16
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.34,
+      "probabilities": {
+        "favorable": 0.47,
+        "adverse": 0.02,
+        "mixed": 0.1,
+        "unchanged": 0.0,
+        "unknown": 0.41
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.46,
+      "probabilities": {
+        "favorable": 0.03,
+        "adverse": 0.15,
+        "mixed": 0.25,
+        "unchanged": 0.0,
+        "unknown": 0.57
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.95,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.02,
+        "mixed": 0.02,
+        "unchanged": 0.0,
+        "unknown": 0.96
+      }
+    }
+  },
+  "requests": [
+    "e6d0efba7aa495f53bd5711e75b2f4a51fc3f35afaa4216653839f38ba78e2ee"
+  ],
+  "strategy_input_sha256": "3acdc323a3f037d5db4ebc5e51cf55ca636f309f0d9c82d6cb1905ee55e18b12",
+  "created_at": "2026-10-19T15:00:42.416346+00:00"
+}

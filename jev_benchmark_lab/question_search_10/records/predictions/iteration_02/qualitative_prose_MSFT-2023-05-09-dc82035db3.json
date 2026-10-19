@@ -1,0 +1,64 @@
+{
+  "case_id": "MSFT-2023-05-09-dc82035db3",
+  "status": "ok",
+  "requests": [
+    "61090587f129acd08adcb195a5780297fbf8104cc86f93ae83f29bf43b7f1ba1",
+    "bdb6f4a4abe6a3d452e61cc39d33bfb1040f0905cfbfada4b1c9c5ef0bb6a5fe"
+  ],
+  "probabilities": {
+    "up": 0.62,
+    "flat": 0.35,
+    "down": 0.03
+  },
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.23
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.31
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "positive": 0.03,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "positive": 0.03,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.09
+    }
+  },
+  "completed_at": "2026-10-19T20:21:36.959215+00:00"
+}

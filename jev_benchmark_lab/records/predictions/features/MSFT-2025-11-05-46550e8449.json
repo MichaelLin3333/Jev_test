@@ -1,0 +1,99 @@
+{
+  "case_id": "MSFT-2025-11-05-46550e8449",
+  "status": "ok",
+  "features": [
+    0.07,
+    0.89,
+    0.03,
+    0.35,
+    0.53,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    0.99,
+    0.0,
+    1.0,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.07
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.89
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.03
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.41,
+      "probabilities": {
+        "favorable": 0.35,
+        "adverse": 0.0,
+        "mixed": 0.12,
+        "unchanged": 0.0,
+        "unknown": 0.53
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    }
+  },
+  "requests": [
+    "ca65c98000d0a43026e66bf9c52be795cd16da00fc39c2c5341c3a0a6970a9e2"
+  ],
+  "strategy_input_sha256": "c809c4582486a9d7150b8d10681a92be39f8d45afbd77192ac3637a5250cda0a",
+  "created_at": "2026-10-19T15:08:10.232992+00:00"
+}

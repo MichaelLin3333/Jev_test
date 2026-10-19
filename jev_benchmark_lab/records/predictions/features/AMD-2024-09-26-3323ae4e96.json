@@ -1,0 +1,99 @@
+{
+  "case_id": "AMD-2024-09-26-3323ae4e96",
+  "status": "ok",
+  "features": [
+    0.63,
+    0.95,
+    0.03,
+    0.8,
+    0.2,
+    0.1,
+    0.9,
+    0.02,
+    0.98,
+    0.14,
+    0.86,
+    0.03,
+    0.97,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.63
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.95
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.03
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.75,
+      "probabilities": {
+        "favorable": 0.8,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.2
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.87,
+      "probabilities": {
+        "favorable": 0.1,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.9
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.02,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.82,
+      "probabilities": {
+        "favorable": 0.14,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.86
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "favorable": 0.03,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    }
+  },
+  "requests": [
+    "a9c800d7301dfbdd4ec8fceb8cf97a90ab60112917cdddc2ab56736b4ed9aec8"
+  ],
+  "strategy_input_sha256": "3693e0be7a161871a063aa699dc1ab0ea3f0e7387492a6b28ee3b967fdd9d73e",
+  "created_at": "2026-10-19T15:00:59.592787+00:00"
+}

@@ -1,0 +1,95 @@
+{
+  "case_id": "AMD-2023-06-13-e6b6a216ba",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.98,
+    "flat": 0.01,
+    "down": 0.01
+  },
+  "requests": [
+    "5daabbcb43540a508e0be44054420b759d1ec3f19202f33e51e253fa384005a1",
+    "3e17170fb26c32ffa7740355aee70b558eaf4c888f1710a739b3e8593d244f56"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.54
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.77
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.57,
+      "probabilities": {
+        "positive": 0.33,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.66
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "positive": 0.01,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.74,
+      "probabilities": {
+        "positive": 0.2,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.79
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.28
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.56,
+      "probabilities": {
+        "positive": 0.65,
+        "negative": 0.02,
+        "mixed": 0.07,
+        "unchanged": 0.0,
+        "unknown": 0.26
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.13
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "plan",
+      "confidence": 0.62,
+      "probabilities": {
+        "plan": 0.7,
+        "binding": 0.13,
+        "realized": 0.12,
+        "canceled": 0.0,
+        "unknown": 0.05
+      }
+    }
+  },
+  "route": "supported_positive_continuation",
+  "input_sha256": "de2ea1e6e7877c8a3b89a43bf41b5f52656c81f4c888cff5fcc146f254fb97d3",
+  "recorded_at": "2026-10-19T16:02:35.002336+00:00"
+}

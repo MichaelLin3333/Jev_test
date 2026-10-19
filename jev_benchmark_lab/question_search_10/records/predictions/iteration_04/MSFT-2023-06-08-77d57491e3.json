@@ -1,0 +1,50 @@
+{
+  "case_id": "MSFT-2023-06-08-77d57491e3",
+  "iteration": 4,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.72,
+    "flat": 0.23,
+    "down": 0.05
+  },
+  "requests": [
+    "1af2fa89189c3b42bd9681924cf0aae679e40213ab79c4024339d4bfa0eae897",
+    "01d92f375958f2f9d7a57a66f6c8f5530ab4177965ef10faeba6182a988df49a"
+  ],
+  "assessments": {
+    "bull_evidence": {
+      "type": "noul",
+      "noul": 0.43
+    },
+    "bear_evidence": {
+      "type": "noul",
+      "noul": 0.39
+    },
+    "bull_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.42,
+      "probabilities": {
+        "positive": 0.42,
+        "negative": 0.01,
+        "mixed": 0.03,
+        "unchanged": 0.0,
+        "unknown": 0.54
+      }
+    },
+    "bear_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.41,
+      "probabilities": {
+        "positive": 0.12,
+        "negative": 0.3,
+        "mixed": 0.04,
+        "unchanged": 0.01,
+        "unknown": 0.53
+      }
+    }
+  },
+  "input_sha256": "212b3bf5724c46429be495c12fe1bb08db74f42d7b82ceab6d4dc5b84a09d9c9",
+  "recorded_at": "2026-10-19T16:03:08.256917+00:00"
+}

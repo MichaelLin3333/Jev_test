@@ -1,0 +1,66 @@
+{
+  "case_id": "META-2024-01-09-66c19dc1e7",
+  "arm": "percent_descriptions",
+  "input_sha256": "9d04bf42cfef5233fe563a7109d0facdc596928cc094b9ef1304fc9f4a6262f3",
+  "status": "ok",
+  "requests": [
+    "fca84112696edd071addf20ee4cd1ff73d0f79673492ad9522ec0f4739573525",
+    "bd8bcca2a80d8bcc526dce0b89c89bd9d95ff6f42cf95f0f613aa0294c97e93a"
+  ],
+  "probabilities": {
+    "up": 0.73,
+    "flat": 0.25,
+    "down": 0.02
+  },
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.26
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.28
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.92,
+      "probabilities": {
+        "positive": 0.06,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.94
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "positive": 0.03,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.17
+    }
+  },
+  "completed_at": "2026-10-19T20:06:55.784786+00:00"
+}

@@ -1,0 +1,99 @@
+{
+  "case_id": "MSFT-2024-04-24-c93e1f6631",
+  "status": "ok",
+  "features": [
+    0.42,
+    0.94,
+    0.15,
+    0.83,
+    0.17,
+    0.04,
+    0.95,
+    0.0,
+    0.99,
+    0.02,
+    0.98,
+    0.01,
+    0.99,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.42
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.94
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.15
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.79,
+      "probabilities": {
+        "favorable": 0.83,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.17
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.94,
+      "probabilities": {
+        "favorable": 0.04,
+        "adverse": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.95
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.02,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    }
+  },
+  "requests": [
+    "3dc93aa2f98b94b4ad36a5fec24ee4a3cf17bcbd424ef4a6430bcacfa29559b3"
+  ],
+  "strategy_input_sha256": "906825d8a9e0a1c520a53ed8cbba53a5c5cecbc2af5295efbec009f1c7c477d1",
+  "created_at": "2026-10-19T15:00:55.933060+00:00"
+}

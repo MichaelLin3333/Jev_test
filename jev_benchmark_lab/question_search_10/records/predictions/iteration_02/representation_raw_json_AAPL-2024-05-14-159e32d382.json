@@ -1,0 +1,66 @@
+{
+  "case_id": "AAPL-2024-05-14-159e32d382",
+  "arm": "raw_json",
+  "input_sha256": "07e750442ef424cf4f3f922f767121135e7fff933d48bf3d87d69c47e5ae96a8",
+  "status": "ok",
+  "requests": [
+    "3166b2688f417331e0c030c9dbb545b6c0496e693d9337fbfc6c815abdfe5dd6",
+    "632af726641d555f01b5e617ad7cecd9d1f8db4081915036edc3a3c81d343ebb"
+  ],
+  "probabilities": {
+    "up": 0.86,
+    "flat": 0.13,
+    "down": 0.01
+  },
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.28
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.46
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.87,
+      "probabilities": {
+        "positive": 0.09,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.9
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.91,
+      "probabilities": {
+        "positive": 0.06,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.93
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.85,
+      "probabilities": {
+        "positive": 0.12,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.88
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.23
+    }
+  },
+  "completed_at": "2026-10-19T20:06:17.141736+00:00"
+}

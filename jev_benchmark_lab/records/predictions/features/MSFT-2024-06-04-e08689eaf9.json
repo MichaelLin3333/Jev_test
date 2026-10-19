@@ -1,0 +1,99 @@
+{
+  "case_id": "MSFT-2024-06-04-e08689eaf9",
+  "status": "ok",
+  "features": [
+    0.55,
+    0.92,
+    0.37,
+    0.87,
+    0.13,
+    0.1,
+    0.87,
+    0.0,
+    0.97,
+    0.08,
+    0.92,
+    0.01,
+    0.99,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.55
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.92
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.37
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.84,
+      "probabilities": {
+        "favorable": 0.87,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.13
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.84,
+      "probabilities": {
+        "favorable": 0.1,
+        "adverse": 0.0,
+        "mixed": 0.03,
+        "unchanged": 0.0,
+        "unknown": 0.87
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.01,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.9,
+      "probabilities": {
+        "favorable": 0.08,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.92
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    }
+  },
+  "requests": [
+    "d3254da9ffc05f190131075383d535b3f1f808a98bd7886a337199b78f8f4722"
+  ],
+  "strategy_input_sha256": "0ec7f0415bf972f9c2ce79997b033aaa2ac55a21622c43db99d6b68a52915196",
+  "created_at": "2026-10-19T15:00:57.483868+00:00"
+}

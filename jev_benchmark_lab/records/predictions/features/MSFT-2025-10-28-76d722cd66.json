@@ -1,0 +1,99 @@
+{
+  "case_id": "MSFT-2025-10-28-76d722cd66",
+  "status": "ok",
+  "features": [
+    0.11,
+    0.93,
+    0.18,
+    0.6,
+    0.4,
+    0.02,
+    0.98,
+    0.0,
+    1.0,
+    0.01,
+    0.99,
+    0.01,
+    0.99,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.11
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.93
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.18
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.5,
+      "probabilities": {
+        "favorable": 0.6,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.4
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.02,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    }
+  },
+  "requests": [
+    "08eb33460ce1bf1ee693f554df3e335e168ae928eaec7f1c7c07837582d1b3f8"
+  ],
+  "strategy_input_sha256": "7824b8828339a26a9230cdfc8baba2980f3dc0f036d69cb07f6c7a33cd950a09",
+  "created_at": "2026-10-19T15:08:09.419891+00:00"
+}

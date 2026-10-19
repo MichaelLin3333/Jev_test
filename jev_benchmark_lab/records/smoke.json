@@ -1,0 +1,247 @@
+{
+  "at": "2026-10-19T14:42:53.748226+00:00",
+  "case_id": "AAPL-2023-05-09-df8be7330a",
+  "training_only": true,
+  "outcome": {
+    "case_id": "AAPL-2023-05-09-df8be7330a",
+    "status": "ok",
+    "return": -0.005490676943610492,
+    "label": "flat",
+    "entry_session": "2023-05-10",
+    "exit_session": "2023-05-16",
+    "sessions": [
+      "2023-05-10",
+      "2023-05-11",
+      "2023-05-12",
+      "2023-05-15",
+      "2023-05-16"
+    ],
+    "entry_open_at": "2023-05-10T13:30:00+00:00",
+    "exit_close_at": "2023-05-16T20:00:00+00:00",
+    "entry_open": 173.02000427246094,
+    "exit_close": 172.07000732421875
+  },
+  "market_features": [
+    -0.009971156931060876,
+    0.019164655957025545,
+    0.06822139933151705,
+    0.015599672492806279,
+    -0.004385321513347806,
+    0.00021905447057934957,
+    0.002953215492221828,
+    0.009086878336567104,
+    0.018945601486446195,
+    0.06526818383929522
+  ],
+  "results": {
+    "legacy": {
+      "case_id": "AAPL-2023-05-09-df8be7330a",
+      "status": "ok",
+      "probabilities": {
+        "up": 0.45,
+        "flat": 0.54,
+        "down": 0.01
+      },
+      "requests": [
+        "ed3ff090f229f3b347ac6fed2766372e5f0200e11b0d505cf9ef212b6eb547d0",
+        "1b11fd5168b9475815a57174a6b814eb7265cec69e17388740f4759321a6a1ec",
+        "c9f353925b3d11e913dbcb23abe43b554dc2f62e686daec9ed730556b06169dc",
+        "2f69a81e01d571f22ecf7c2620fb4629eef087048e23b45a8e60f9682ea3366c"
+      ]
+    },
+    "single_direct": {
+      "case_id": "AAPL-2023-05-09-df8be7330a",
+      "status": "ok",
+      "probabilities": {
+        "up": 0.35,
+        "flat": 0.64,
+        "down": 0.01
+      },
+      "requests": [
+        "be6a8d767d974c5da2728c6b164b0ddc686982a8f98d362dd1ec259594b00a92"
+      ]
+    },
+    "features": {
+      "case_id": "AAPL-2023-05-09-df8be7330a",
+      "status": "ok",
+      "features": [
+        0.8,
+        0.91,
+        0.04,
+        0.86,
+        0.13,
+        0.049999999999999996,
+        0.89,
+        0.03,
+        0.97,
+        0.03,
+        0.96,
+        0.01,
+        0.99,
+        0.0
+      ],
+      "answers": {
+        "economic_event": {
+          "type": "noul",
+          "noul": 0.8
+        },
+        "relevance": {
+          "type": "noul",
+          "noul": 0.91
+        },
+        "increment_supported": {
+          "type": "noul",
+          "noul": 0.04
+        },
+        "revenue": {
+          "type": "choice",
+          "choice": "favorable",
+          "confidence": 0.82,
+          "probabilities": {
+            "favorable": 0.86,
+            "adverse": 0.0,
+            "mixed": 0.01,
+            "unchanged": 0.0,
+            "unknown": 0.13
+          }
+        },
+        "margin": {
+          "type": "choice",
+          "choice": "unknown",
+          "confidence": 0.86,
+          "probabilities": {
+            "favorable": 0.06,
+            "adverse": 0.01,
+            "mixed": 0.04,
+            "unchanged": 0.0,
+            "unknown": 0.89
+          }
+        },
+        "cash": {
+          "type": "choice",
+          "choice": "unknown",
+          "confidence": 0.96,
+          "probabilities": {
+            "favorable": 0.03,
+            "adverse": 0.0,
+            "mixed": 0.0,
+            "unchanged": 0.0,
+            "unknown": 0.97
+          }
+        },
+        "discount": {
+          "type": "choice",
+          "choice": "unknown",
+          "confidence": 0.95,
+          "probabilities": {
+            "favorable": 0.03,
+            "adverse": 0.0,
+            "mixed": 0.01,
+            "unchanged": 0.0,
+            "unknown": 0.96
+          }
+        },
+        "surprise": {
+          "type": "choice",
+          "choice": "unknown",
+          "confidence": 0.99,
+          "probabilities": {
+            "favorable": 0.01,
+            "adverse": 0.0,
+            "mixed": 0.0,
+            "unchanged": 0.0,
+            "unknown": 0.99
+          }
+        }
+      },
+      "requests": [
+        "d068958caa23b4a89bad682bb375e4a31c18b5453f3468e85a8644d2b851ac84"
+      ]
+    }
+  },
+  "metrics": {
+    "legacy": {
+      "scheduled": 1,
+      "labeled": 1,
+      "label_coverage": 1.0,
+      "valid_forecasts": 1,
+      "forecast_coverage": 1.0,
+      "scored": 1,
+      "brier": 0.41419999999999996,
+      "selection_brier_failure_penalized": 0.41419999999999996,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "recall_by_actual_class": {
+        "up": null,
+        "flat": 1.0,
+        "down": null
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 0,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 0,
+          "flat": 1,
+          "down": 0
+        },
+        "down": {
+          "up": 0,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 0,
+        "coverage_of_labeled": 0.0,
+        "conditional_accuracy": null,
+        "conditional_brier": null
+      }
+    },
+    "single_direct": {
+      "scheduled": 1,
+      "labeled": 1,
+      "label_coverage": 1.0,
+      "valid_forecasts": 1,
+      "forecast_coverage": 1.0,
+      "scored": 1,
+      "brier": 0.2522,
+      "selection_brier_failure_penalized": 0.2522,
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "recall_by_actual_class": {
+        "up": null,
+        "flat": 1.0,
+        "down": null
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 0,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 0,
+          "flat": 1,
+          "down": 0
+        },
+        "down": {
+          "up": 0,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 1,
+        "coverage_of_labeled": 1.0,
+        "conditional_accuracy": 1.0,
+        "conditional_brier": 0.2522
+      }
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,50 @@
+{
+  "case_id": "AAPL-2023-11-28-dbef380338",
+  "iteration": 4,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.79,
+    "flat": 0.19,
+    "down": 0.02
+  },
+  "requests": [
+    "76ee76103b04428bfae4f4edad16b0df7aca5d128c0bd9469c7abc9731d7c3c9",
+    "a6f923c7cce962ef97f6bf49254382cdedf705072f6d801309e01aa3c30b6217"
+  ],
+  "assessments": {
+    "bull_evidence": {
+      "type": "noul",
+      "noul": 0.47
+    },
+    "bear_evidence": {
+      "type": "noul",
+      "noul": 0.34
+    },
+    "bull_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.75,
+      "probabilities": {
+        "positive": 0.19,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.01,
+        "unknown": 0.8
+      }
+    },
+    "bear_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.8,
+      "probabilities": {
+        "positive": 0.06,
+        "negative": 0.09,
+        "mixed": 0.0,
+        "unchanged": 0.01,
+        "unknown": 0.84
+      }
+    }
+  },
+  "input_sha256": "882e217f2983e17890cf68b5edb3cbeb6da1e679b0520a0e9c365fdbea5d87e3",
+  "recorded_at": "2026-10-19T16:03:19.707383+00:00"
+}

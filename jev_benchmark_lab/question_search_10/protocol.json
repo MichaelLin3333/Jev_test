@@ -1,0 +1,39 @@
+{
+  "version": "question-search-10-v1",
+  "model": "jev-1.13.0",
+  "iterations": 10,
+  "goal_accuracy": 0.70,
+  "primary_selection": "Validation correct predictions / all cases with valid price labels, counting missing forecasts as incorrect. At least 70% is a goal, not a guaranteed result. Do not change target, coverage, case membership or labels to meet it.",
+  "tie_breakers": ["higher balanced accuracy", "lower failure-penalized multiclass Brier", "earlier iteration"],
+  "development": "Reuse only the earlier 75 training and 45 validation cases and their saved prices/labels. Fit statistical models on the 74 labeled training cases only. Validation feedback may choose strategy branches and prompt wording, never fit predictor coefficients or insert per-case labels into requests.",
+  "excluded_previous_test": "The 30 earlier final-test cases and their labels are excluded from every new training/validation/tuning step. Their metadata may be read only to exclude duplicated sources and overlapping same-stock windows from the new holdout.",
+  "holdout": {
+    "universe": ["NVDA", "AAPL", "AMD", "META", "MSFT"],
+    "start": "2026-01-01",
+    "end": "2026-06-30",
+    "issuer_cases_per_company": 5,
+    "controls": {"NVDA":"2026-01-15", "AAPL":"2026-02-15", "AMD":"2026-03-15", "META":"2026-04-15", "MSFT":"2026-05-15"},
+    "selection": "Discover the same primary-source company archives for 2026, bounded at 100 pages per issuer and 100 Apple global pages; keep January-June. Group each issuer's articles in seven-calendar-day blocks. Reserve a risk-oriented title and financial-results title where available; fill remaining slots at evenly spaced date ranks with fixed seed 2718. Download only selected bodies and deterministic next-ranked replacements for inaccessible/invalid text before freezing. Add one real NASA APOD control per company. Every source, including controls, must pass exact source/text-duplication and same-stock target-session overlap checks against ALL earlier cases. Controls have no exception. Never select by returns.",
+    "failed_fixed_control": "If an assigned NASA date is inaccessible or overlaps a prior window, try the next calendar day in ascending order for at most 14 days, recording each rejection before any holdout returns are fetched.",
+    "provenance": "Actual source passages only, capped at 10000 characters; all labeled excerpts. Store source URL, displayed date, actual retrieval time, extraction selector, hashes and historical-version uncertainty.",
+    "sealed": "Freeze case membership and source text before iteration 1. Do not acquire prices after 2025-06-30 or create holdout labels until all ten iterations finish and the selected configuration and code are frozen. Evaluate selected strategy and predeclared baselines once. Never tune after that result."
+  },
+  "target": "Unchanged: first regular-session open strictly after end-of-date New York cutoff through fifth regular-session close, counting entry as one. Raw price return; up >+1%, flat inclusive +/-1%, down <-1%. Reuse frozen target/calendar/label functions. Split windows or missing bars remain unscored, with no replacement after freeze.",
+  "response_policy": {"attempts":3,"parallelism":3,"validation":"Existing strict typed validator, concrete version check, probability sum tolerance 1e-6; preserve invalid responses; no normalization or retry because of accuracy","retries":"Identical request only, bounded 2/5-second backoff, respect Retry-After up to 60 seconds; no auth-error retries","cache":"Exact model/state/questions hash; completed and exhausted attempts retained"},
+  "market_context": "Only saved pre-cutoff 1/5/20-session stock and SPY returns, 20-session volatilities and relative returns. A frozen training-only market model may provide forecast probabilities; those are predictions, never realized outcome labels.",
+  "branches": [
+    {"iteration":1,"name":"market_aware_direct","change":"One direct forecast with market context, a precise executable window and explicit distinction between uncertainty and a flat return."},
+    {"iteration":2,"name":"business_then_trade","change":"Separate business/evidence interpretation from the subsequent tradable-return decision; pass original questions and definitions with answers."},
+    {"iteration":3,"name":"continuation_reversal_tree","change":"Assess pricing/continuation mechanisms, route irrelevant or unsupported news to the fixed market forecast, and ask a branch-specific final question otherwise."},
+    {"iteration":4,"name":"bull_bear_adjudication","change":"Independent typed bull and bear evidence assessments followed by a neutral adjudication of five-session returns."},
+    {"iteration":5,"name":"horizon_features_logistic","change":"New short-horizon economic/evidence features plus the same pre-cutoff market features; training-only balanced logistic regression, C=0.05; record matched market-only ablation."},
+    {"iteration":6,"name":"pricing_features_shallow_tree","change":"Rephrase around what remains after the entry open and realized versus intended actions; training-only decision tree, depth 2 and minimum leaf 12; matched market-only ablation."},
+    {"iteration":7,"name":"ordered_return_thresholds","change":"Ask separate probability questions for return below -1% and return at most +1%, then convert the ordered cumulative probabilities to three classes. If inconsistent, pool the two CDF values at their mean and record the conflict; this is a declared reconciliation, not alteration of invalid API output."},
+    {"iteration":8,"name":"reverse_wording_ensemble","change":"Reverse option order and emphasize continuation versus repricing; average this fresh forecast with the best earlier direct/staged branch. No optimized weights."},
+    {"iteration":9,"name":"market_regime_question_tree","change":"Use pre-cutoff market drawdown, relative momentum and Jev relevance to select bearish-regime, reversal-risk or neutral question wording; unsupported economic news falls back to market probabilities."},
+    {"iteration":10,"name":"retained_branch_ensemble","change":"Equal-probability average of the three earlier candidates with best validation accuracy, breaking ties with the declared ranking. No new fitting or calls."}
+  ],
+  "baselines": ["always-up/flat/down", "training empirical class probabilities", "earlier market-only C=0.01", "earlier winning Jev-feature logistic C=0.01", "same predictor without Jev features for selected learned branch"],
+  "reporting": "Report every iteration, exact questions and stage graph, train/validation metrics, coverage, retention, final selected results, failure cases and whether 70% was reached on validation and fresh holdout separately. Selective accuracy is separate and cannot satisfy the 70% full-coverage goal.",
+  "limitations": ["Historical article versions unverified", "Model training may contain historical outcomes", "Five technology stocks and small validation/holdout", "Repeated validation optimization can overfit that development set", "Issuer newsrooms are promotional", "Shared macro exposures remain dependent despite same-stock window exclusions"]
+}

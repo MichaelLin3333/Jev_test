@@ -1,0 +1,94 @@
+{
+  "case_id": "NVDA-2024-04-24-6173a916e3",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.6630446783496209,
+    "flat": 0.10442034639341162,
+    "down": 0.2325349752569675
+  },
+  "requests": [
+    "6eccf23372df5bf108a670a8d2b24d8e9cd6c7061b7f72ba579c92969192eee0"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.47
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.96
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.46,
+      "probabilities": {
+        "positive": 0.4,
+        "negative": 0.02,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.57
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.59,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.31,
+        "mixed": 0.02,
+        "unchanged": 0.0,
+        "unknown": 0.67
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.71,
+      "probabilities": {
+        "positive": 0.21,
+        "negative": 0.01,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.77
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "negative",
+      "confidence": 0.24,
+      "probabilities": {
+        "positive": 0.29,
+        "negative": 0.39,
+        "mixed": 0.06,
+        "unchanged": 0.0,
+        "unknown": 0.26
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.18
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "binding",
+      "confidence": 0.91,
+      "probabilities": {
+        "plan": 0.06,
+        "binding": 0.9299999999999999,
+        "realized": 0.0,
+        "canceled": 0.0,
+        "unknown": 0.01
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "766045aedcb5811af13cfe421d875b64416b3a83920ee5f7a2a4f3e2799a3ec0",
+  "recorded_at": "2026-10-19T16:02:46.760533+00:00"
+}

@@ -1,0 +1,135 @@
+{
+  "case_id": "AAPL-2023-05-04-c31e349348",
+  "iteration": 5,
+  "status": "ok",
+  "probabilities": null,
+  "requests": [
+    "1f6a5534ddd57cc6bb1efec8b31a59b066f671b8a2863673c91030c4d7ce730a"
+  ],
+  "features": [
+    0.24,
+    0.91,
+    0.3,
+    0.16,
+    0.12,
+    0.25,
+    0.0,
+    0.2,
+    0.13,
+    0.63,
+    0.11,
+    0.15,
+    0.7,
+    0.08,
+    0.15,
+    0.74,
+    0.44,
+    0.15,
+    0.33,
+    0.02,
+    0.02,
+    0.96,
+    0.52,
+    0.0
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.24
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.91
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.54,
+      "probabilities": {
+        "positive": 0.22,
+        "negative": 0.02,
+        "mixed": 0.13,
+        "unchanged": 0.0,
+        "unknown": 0.63
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.62,
+      "probabilities": {
+        "positive": 0.13,
+        "negative": 0.02,
+        "mixed": 0.15,
+        "unchanged": 0.0,
+        "unknown": 0.7
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.68,
+      "probabilities": {
+        "positive": 0.09,
+        "negative": 0.01,
+        "mixed": 0.15,
+        "unchanged": 0.01,
+        "unknown": 0.74
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.3
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.35,
+      "probabilities": {
+        "positive": 0.48,
+        "negative": 0.04,
+        "mixed": 0.15,
+        "unchanged": 0.0,
+        "unknown": 0.33
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.16
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "realized",
+      "confidence": 0.4,
+      "probabilities": {
+        "plan": 0.17,
+        "binding": 0.09,
+        "realized": 0.52,
+        "canceled": 0.0,
+        "unknown": 0.22
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.95,
+      "probabilities": {
+        "positive": 0.02,
+        "negative": 0.0,
+        "mixed": 0.02,
+        "unchanged": 0.0,
+        "unknown": 0.96
+      }
+    },
+    "incremental_orders": {
+      "type": "noul",
+      "noul": 0.12
+    },
+    "near_term_resolution": {
+      "type": "noul",
+      "noul": 0.25
+    }
+  },
+  "input_sha256": "aa029f3d052d96b3893045c937fc85a64b52a12990522e0c7f37d460b7906540",
+  "recorded_at": "2026-10-19T16:04:00.532534+00:00"
+}

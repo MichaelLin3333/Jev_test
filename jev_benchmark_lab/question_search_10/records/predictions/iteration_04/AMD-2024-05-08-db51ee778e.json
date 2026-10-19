@@ -1,0 +1,50 @@
+{
+  "case_id": "AMD-2024-05-08-db51ee778e",
+  "iteration": 4,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.84,
+    "flat": 0.07,
+    "down": 0.09
+  },
+  "requests": [
+    "7a9612866dc1c6a34c381738fcdf02f64b15f7e9503ba8094193c7f77d8b14cb",
+    "e8b59d2afff53344836dde0a651e53302845503f00a23faba92d9918e941c403"
+  ],
+  "assessments": {
+    "bull_evidence": {
+      "type": "noul",
+      "noul": 0.55
+    },
+    "bear_evidence": {
+      "type": "noul",
+      "noul": 0.37
+    },
+    "bull_news_channel": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.5,
+      "probabilities": {
+        "positive": 0.6,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.39
+      }
+    },
+    "bear_news_channel": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.39,
+      "probabilities": {
+        "positive": 0.33,
+        "negative": 0.14,
+        "mixed": 0.01,
+        "unchanged": 0.01,
+        "unknown": 0.51
+      }
+    }
+  },
+  "input_sha256": "76bde9836cf57144b8883216bb924d3bac457ad0484ec3c867574a49ac9bc6da",
+  "recorded_at": "2026-10-19T16:03:32.020231+00:00"
+}

@@ -1,0 +1,99 @@
+{
+  "case_id": "AMD-2025-02-28-2b2c203942",
+  "status": "ok",
+  "features": [
+    0.62,
+    0.89,
+    0.4,
+    0.84,
+    0.16,
+    0.01,
+    0.97,
+    -0.02,
+    0.98,
+    0.01,
+    0.99,
+    0.01,
+    0.99,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.62
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.89
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.4
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.8,
+      "probabilities": {
+        "favorable": 0.84,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.16
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.02,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.02,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    }
+  },
+  "requests": [
+    "114faee7eb4c82b0454d57ac35c3b5bb822c72ebb57fa3ab4126cea1e2916b42"
+  ],
+  "strategy_input_sha256": "c36fddd22fb1b1b514cfffbf0387404efe8f7689e79e1755538eaf0ba75bab2f",
+  "created_at": "2026-10-19T15:01:04.920108+00:00"
+}

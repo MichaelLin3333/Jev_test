@@ -1,0 +1,20 @@
+# Override the parent repository's broad data/ rule for reproducible lab inputs.
+!data/
+data/*
+!data/cases.json
+!data/coverage.json
+!data/exclusions.json
+!data/smoke_cases.json
+!data/*outcomes.json
+!data/*market_features.json
+!data/discovery/
+!data/discovery/**
+!data/prices/
+!data/prices/**
+
+# Keep raw retrieval snapshots locally; avoid sharing transient provider cookies.
+data/raw_sources/
+data/source_probe/
+data/yfinance_cache/
+__pycache__/
+*.py[cod]

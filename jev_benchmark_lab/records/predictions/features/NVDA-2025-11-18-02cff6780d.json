@@ -1,0 +1,99 @@
+{
+  "case_id": "NVDA-2025-11-18-02cff6780d",
+  "status": "ok",
+  "features": [
+    0.66,
+    0.97,
+    0.15,
+    0.86,
+    0.14,
+    0.13,
+    0.82,
+    0.04000000000000001,
+    0.87,
+    0.04,
+    0.96,
+    0.03,
+    0.97,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.66
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.97
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.15
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.82,
+      "probabilities": {
+        "favorable": 0.86,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.14
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.77,
+      "probabilities": {
+        "favorable": 0.13,
+        "adverse": 0.0,
+        "mixed": 0.05,
+        "unchanged": 0.0,
+        "unknown": 0.82
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.84,
+      "probabilities": {
+        "favorable": 0.07,
+        "adverse": 0.03,
+        "mixed": 0.03,
+        "unchanged": 0.0,
+        "unknown": 0.87
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.95,
+      "probabilities": {
+        "favorable": 0.04,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.96
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "favorable": 0.03,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    }
+  },
+  "requests": [
+    "7dbe1090c4b32b3f13530d7e4f0968340ca81626b90d7f70f2a21178c9485a0a"
+  ],
+  "strategy_input_sha256": "f7b78c2c8372ddc20e99e11e0a87aaec16dcf4766e9a2f853507d0ca25cfe727",
+  "created_at": "2026-10-19T15:08:11.262554+00:00"
+}

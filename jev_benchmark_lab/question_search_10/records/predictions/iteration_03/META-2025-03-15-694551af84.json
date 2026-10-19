@@ -1,0 +1,94 @@
+{
+  "case_id": "META-2025-03-15-694551af84",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.6917632041857587,
+    "flat": 0.13325466363028113,
+    "down": 0.1749821321839603
+  },
+  "requests": [
+    "86cbd1e83aa2fa52dc80f9c998cec314c2068c9fca8c9f75f0d0db01e42d2200"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.09
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.02
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "positive": 0.02,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "positive": 0.01,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.01,
+        "unknown": 0.98
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.2
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.26,
+      "probabilities": {
+        "positive": 0.21,
+        "negative": 0.35,
+        "mixed": 0.03,
+        "unchanged": 0.0,
+        "unknown": 0.41
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.12
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "plan": 0.0,
+        "binding": 0.0,
+        "realized": 0.0,
+        "canceled": 0.0,
+        "unknown": 1.0
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "8bc8c3b538c45e9b6e5e0bf75e1f92957bf6292fd892dca52a4e9223c6271097",
+  "recorded_at": "2026-10-19T16:02:56.480579+00:00"
+}

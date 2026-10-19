@@ -1,0 +1,99 @@
+{
+  "case_id": "AMD-2023-10-19-4e97ce7c71",
+  "status": "ok",
+  "features": [
+    0.59,
+    0.93,
+    0.54,
+    0.8,
+    0.2,
+    0.02,
+    0.98,
+    0.0,
+    1.0,
+    0.06,
+    0.94,
+    0.02,
+    0.98,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.59
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.93
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.54
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "favorable",
+      "confidence": 0.75,
+      "probabilities": {
+        "favorable": 0.8,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.2
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.02,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.92,
+      "probabilities": {
+        "favorable": 0.06,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.94
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.02,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    }
+  },
+  "requests": [
+    "d04d5afaef398850c5039264fbb7ae1fefb81da2034b3501dbe0eee3324ea686"
+  ],
+  "strategy_input_sha256": "17418b05e2138f03f67ea53a3b8e7fc2962782fd43d35cb7ea740e2c0134d28f",
+  "created_at": "2026-10-19T15:00:49.988537+00:00"
+}

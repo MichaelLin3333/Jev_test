@@ -1,0 +1,99 @@
+{
+  "case_id": "META-2023-04-05-e7a61727dc",
+  "status": "ok",
+  "features": [
+    0.32,
+    0.84,
+    0.14,
+    -0.030000000000000002,
+    0.86,
+    -0.2,
+    0.7,
+    -0.32,
+    0.67,
+    0.0,
+    0.99,
+    0.0,
+    1.0,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.32
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.84
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.14
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.82,
+      "probabilities": {
+        "favorable": 0.02,
+        "adverse": 0.05,
+        "mixed": 0.06,
+        "unchanged": 0.01,
+        "unknown": 0.86
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.62,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.2,
+        "mixed": 0.1,
+        "unchanged": 0.0,
+        "unknown": 0.7
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.59,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.32,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.67
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    }
+  },
+  "requests": [
+    "a1792c2b455fe6702b333ffbc810963c8bccb667a57053e7a6bee95758aecf15"
+  ],
+  "strategy_input_sha256": "2164ae2d8416810105513a5526c87af78fd0d947ee3742b2450ccbaa7b536c4d",
+  "created_at": "2026-10-19T15:00:43.308666+00:00"
+}

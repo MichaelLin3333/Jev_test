@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-10-19T15:17:24.194065+00:00",
+  "software_checks_passed": true,
+  "offline_tests_passed": 15,
+  "cases_rechecked": 150,
+  "api_requests_checked": 876,
+  "labels_recomputed_from_saved_prices": true,
+  "market_features_recomputed_without_post_cutoff_bars": true,
+  "realized_outcome_keys_found_in_api_states": [],
+  "model_pin_mismatches": [],
+  "changed_prediction_source_files": [],
+  "preservation": {
+    "checked_at": "2026-10-19T15:17:24.192916+00:00",
+    "checked_files": 124,
+    "changed_or_missing": [],
+    "passed": true
+  },
+  "holdout_window_overlaps_with_prior_work": [
+    {
+      "new_case": "NVDA-2025-07-15-aeeb92e2d0",
+      "control": true,
+      "previous_case": "20_nvda-policy-h20-license-assurance-2025-07-14",
+      "shared_sessions": [
+        "2025-07-16",
+        "2025-07-17",
+        "2025-07-18",
+        "2025-07-21"
+      ]
+    }
+  ],
+  "holdout_independence_issue_count": 1,
+  "scores_or_membership_changed": false,
+  "final_evaluation_repeated": false,
+  "audit_conclusion": "A small Brier improvement is uncertain; all selected final class predictions are up. One control's target window overlaps prior work, weakening holdout independence; it remains in the frozen result."
+}

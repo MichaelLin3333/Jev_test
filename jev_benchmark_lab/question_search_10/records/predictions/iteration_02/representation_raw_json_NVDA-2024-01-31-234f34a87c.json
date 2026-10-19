@@ -1,0 +1,66 @@
+{
+  "case_id": "NVDA-2024-01-31-234f34a87c",
+  "arm": "raw_json",
+  "input_sha256": "2ec91c5c7164d533db7dea1aa4a7dc248ebe79a0f7cae8e0359d1757ba461961",
+  "status": "ok",
+  "requests": [
+    "8382505d8901b4cd482028e62df70c8bc741b9a6ffec37bf262263fdfba45211",
+    "cc0c4a8c2ddc490b01687f27c03a5abea6eb2962067b6c3dc47ca36df658d274"
+  ],
+  "probabilities": {
+    "up": 0.92,
+    "flat": 0.07,
+    "down": 0.01
+  },
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.17
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.05
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.87,
+      "probabilities": {
+        "positive": 0.1,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.9
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.92,
+      "probabilities": {
+        "positive": 0.06,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.94
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.17
+    }
+  },
+  "completed_at": "2026-10-19T20:06:17.077009+00:00"
+}

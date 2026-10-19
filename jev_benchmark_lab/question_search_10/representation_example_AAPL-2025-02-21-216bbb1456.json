@@ -1,0 +1,157 @@
+{
+  "raw_json": {
+    "company": {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "profile": "Apple develops and sells personal computing devices including iPhone, Mac and iPad, with operating systems and digital services.",
+      "source": "https://www.apple.com/newsroom/"
+    },
+    "focal_event": "Apple introduces News+ Food",
+    "decision_time": "2025-02-21T23:59:59-05:00",
+    "company_baselines": [],
+    "assumptions": [
+      "Retrospective reconstruction; exact historical article version is unverified.",
+      "Forecast cutoff is the end of the publisher's displayed date in America/New_York."
+    ],
+    "expectations": {
+      "status": "not_provided",
+      "details": "No point-in-time analyst consensus or market-implied expectation is available."
+    },
+    "market_context": {
+      "status": "observed_before_cutoff",
+      "units": "decimal fractions",
+      "data": {
+        "stock_return_1": -0.001138993520771736,
+        "stock_return_5": 0.016643912941573413,
+        "stock_return_20": 0.0978717653189276,
+        "stock_volatility_20": 0.017122578466059628,
+        "spy_return_1": -0.017104102948802602,
+        "spy_return_5": -0.01605625168671776,
+        "spy_return_20": -0.016088556881662552,
+        "spy_volatility_20": 0.007407393346138354,
+        "relative_return_5": 0.03270016462829117,
+        "relative_return_20": 0.11396032220059016
+      }
+    },
+    "magnitude_inputs": null,
+    "forecast_target": {
+      "entry_rule": "First regular-session open strictly after decision_time.",
+      "exit_rule": "Fifth regular-session close, counting entry session as one.",
+      "return_type": "raw",
+      "neutral_band": 0.01
+    },
+    "articles": [
+      {
+        "title": "Apple introduces News+ Food",
+        "url": "https://www.apple.com/newsroom/2025/02/apple-introduces-news-plus-food",
+        "publication_date": "2025-02-21",
+        "text_kind": "publisher_excerpt",
+        "text": "Coming with iOS 18.4 and iPadOS 18.4 in April, Apple News+ subscribers will have access to Apple News+ Food, a new section that will feature tens of thousands of recipes — as well as stories about restaurants, healthy eating, kitchen essentials, and more — from the world’s top food publishers, including Allrecipes, Bon Appétit, Food & Wine, Good Food, and Serious Eats.\n\nWith the new Food feature, users will be able to find stories curated by Apple News editors, as well as browse, search, and filter tens of thousands of recipes in the Recipe Catalog — with new recipes added every day. The beautifully designed recipe format makes it easy to review ingredients and directions, and a new cook mode takes step-by-step instructions to the full screen. Users can also save their favorite recipes for later and access them offline.\n\nApple News+ Food will be available to Apple News+ subscribers in April with iOS 18.4 and iPadOS 18.4. Select stories and recipes will also be available for users who do not subscribe to Apple News+.",
+        "source_company": "AAPL"
+      }
+    ],
+    "pre_cutoff_market": {
+      "stock_return_1": -0.001138993520771736,
+      "stock_return_5": 0.016643912941573413,
+      "stock_return_20": 0.0978717653189276,
+      "stock_volatility_20": 0.017122578466059628,
+      "spy_return_1": -0.017104102948802602,
+      "spy_return_5": -0.01605625168671776,
+      "spy_return_20": -0.016088556881662552,
+      "spy_volatility_20": 0.007407393346138354,
+      "relative_return_5": 0.03270016462829117,
+      "relative_return_20": 0.11396032220059016
+    },
+    "base_forecast": {
+      "description": "Forecast from an earlier training-only market model; not a realized outcome",
+      "probabilities": {
+        "up": 0.6516720845377084,
+        "flat": 0.13223712328438947,
+        "down": 0.21609079217790214
+      }
+    },
+    "volatility_scale": {
+      "five_session_one_sigma_reference": 0.0382872494001834,
+      "flat_half_band_divided_by_sigma": 0.26118355736341037,
+      "note": "A scale reference, not a forecast or realized return; do not confuse missing news with zero ordinary volatility."
+    }
+  },
+  "percent_descriptions": {
+    "company": {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "profile": "Apple develops and sells personal computing devices including iPhone, Mac and iPad, with operating systems and digital services.",
+      "source": "https://www.apple.com/newsroom/"
+    },
+    "focal_event": "Apple introduces News+ Food",
+    "decision_time": "2025-02-21T23:59:59-05:00",
+    "company_baselines": [],
+    "assumptions": [
+      "Retrospective reconstruction; exact historical article version is unverified.",
+      "Forecast cutoff is the end of the publisher's displayed date in America/New_York."
+    ],
+    "expectations": {
+      "status": "not_provided",
+      "details": "No point-in-time analyst consensus or market-implied expectation is available."
+    },
+    "market_context": {
+      "status": "observed_before_cutoff",
+      "units": "Percentages and percentage-point differences, as explicitly described.",
+      "data": {
+        "stock_return_1": "The stock's closing-price change over the last completed session: fell 0.11%.",
+        "stock_return_5": "The stock's closing-price change over the last five completed sessions: rose 1.66%.",
+        "stock_return_20": "The stock's closing-price change over the last twenty completed sessions: rose 9.79%.",
+        "stock_volatility_20": "The stock's daily-return volatility estimated from twenty completed sessions is 1.71%; this measures variability, not expected appreciation.",
+        "spy_return_1": "The SPY broad-market closing-price change over the last completed session: fell 1.71%.",
+        "spy_return_5": "The SPY broad-market closing-price change over the last five completed sessions: fell 1.61%.",
+        "spy_return_20": "The SPY broad-market closing-price change over the last twenty completed sessions: fell 1.61%.",
+        "spy_volatility_20": "SPY's daily-return volatility estimated from twenty completed sessions is 0.74%; this measures variability, not expected appreciation.",
+        "relative_return_5": "Over 5 completed sessions the stock outperformed SPY by 3.27 percentage points (stock return minus SPY return).",
+        "relative_return_20": "Over 20 completed sessions the stock outperformed SPY by 11.40 percentage points (stock return minus SPY return)."
+      }
+    },
+    "magnitude_inputs": null,
+    "forecast_target": {
+      "entry_rule": "First regular-session open strictly after decision_time.",
+      "exit_rule": "Fifth regular-session close, counting entry session as one.",
+      "return_type": "raw",
+      "neutral_band": "1.00% half-band; flat includes both -1.00% and +1.00%."
+    },
+    "articles": [
+      {
+        "title": "Apple introduces News+ Food",
+        "url": "https://www.apple.com/newsroom/2025/02/apple-introduces-news-plus-food",
+        "publication_date": "2025-02-21",
+        "text_kind": "publisher_excerpt",
+        "text": "Coming with iOS 18.4 and iPadOS 18.4 in April, Apple News+ subscribers will have access to Apple News+ Food, a new section that will feature tens of thousands of recipes — as well as stories about restaurants, healthy eating, kitchen essentials, and more — from the world’s top food publishers, including Allrecipes, Bon Appétit, Food & Wine, Good Food, and Serious Eats.\n\nWith the new Food feature, users will be able to find stories curated by Apple News editors, as well as browse, search, and filter tens of thousands of recipes in the Recipe Catalog — with new recipes added every day. The beautifully designed recipe format makes it easy to review ingredients and directions, and a new cook mode takes step-by-step instructions to the full screen. Users can also save their favorite recipes for later and access them offline.\n\nApple News+ Food will be available to Apple News+ subscribers in April with iOS 18.4 and iPadOS 18.4. Select stories and recipes will also be available for users who do not subscribe to Apple News+.",
+        "source_company": "AAPL"
+      }
+    ],
+    "pre_cutoff_market": {
+      "stock_return_1": "The stock's closing-price change over the last completed session: fell 0.11%.",
+      "stock_return_5": "The stock's closing-price change over the last five completed sessions: rose 1.66%.",
+      "stock_return_20": "The stock's closing-price change over the last twenty completed sessions: rose 9.79%.",
+      "stock_volatility_20": "The stock's daily-return volatility estimated from twenty completed sessions is 1.71%; this measures variability, not expected appreciation.",
+      "spy_return_1": "The SPY broad-market closing-price change over the last completed session: fell 1.71%.",
+      "spy_return_5": "The SPY broad-market closing-price change over the last five completed sessions: fell 1.61%.",
+      "spy_return_20": "The SPY broad-market closing-price change over the last twenty completed sessions: fell 1.61%.",
+      "spy_volatility_20": "SPY's daily-return volatility estimated from twenty completed sessions is 0.74%; this measures variability, not expected appreciation.",
+      "relative_return_5": "Over 5 completed sessions the stock outperformed SPY by 3.27 percentage points (stock return minus SPY return).",
+      "relative_return_20": "Over 20 completed sessions the stock outperformed SPY by 11.40 percentage points (stock return minus SPY return)."
+    },
+    "base_forecast": {
+      "description": "Forecast from an earlier training-only market model; not a realized outcome",
+      "probabilities": {
+        "up": "65.1672% model probability of up; this is a forecast reference, not an observed outcome",
+        "flat": "13.2237% model probability of flat; this is a forecast reference, not an observed outcome",
+        "down": "21.6091% model probability of down; this is a forecast reference, not an observed outcome"
+      }
+    },
+    "volatility_scale": {
+      "five_session_one_sigma_reference": "3.83% five-session variability reference, not an expected return",
+      "flat_half_band_divided_by_sigma": "26.12% of the volatility reference; this is a scale ratio, not a price return",
+      "note": "A scale reference, not a forecast or realized return; do not confuse missing news with zero ordinary volatility."
+    }
+  },
+  "summarized_prose": "Target company: Apple (AAPL). Apple develops and sells personal computing devices including iPhone, Mac and iPad, with operating systems and digital services.\n\nFocal announcement: Apple introduces News+ Food.\n\nDecision cutoff: 2025-02-21T23:59:59-05:00. Use only information available before this cutoff.\n\nSource: Apple introduces News+ Food. Published date: 2025-02-21. URL: https://www.apple.com/newsroom/2025/02/apple-introduces-news-plus-food.\n\nCondensed source passage, selected from the supplied excerpt; other details are omitted: Coming with iOS 18.4 and iPadOS 18.4 in April, Apple News+ subscribers will have access to Apple News+ Food, a new section that will feature tens of thousands of recipes — as well as stories about restaurants, healthy eating, kitchen essentials, and more — from the world’s top food publishers, including Allrecipes, Bon Appétit, Food & Wine, Good Food, and Serious Eats. With the new Food feature, users will be able to find stories curated by Apple News editors, as well as browse, search, and filter tens of thousands of recipes in the Recipe Catalog — with new recipes added every day. The beautifully designed recipe format makes it easy to review ingredients and directions, and a new cook mode takes step-by-step instructions to the full screen. Apple News+ Food will be available to Apple News+ subscribers in April with iOS 18.4 and iPadOS 18.4. Select stories and recipes will also be available for users who do not subscribe to Apple News+.\n\nHistorical limitation: the exact historical article version is unverified; publication date does not establish that today's text existed then.\n\nPre-announcement expectations: No point-in-time analyst consensus or market-implied expectation is available.\n\nCompany financial baselines: none supplied.\n\nIncremental financial magnitude inputs: not supplied.\n\nObserved market context, using completed sessions before the cutoff:\n\nThe stock's closing-price change over the last completed session: fell 0.11%.\n\nThe stock's closing-price change over the last five completed sessions: rose 1.66%.\n\nThe stock's closing-price change over the last twenty completed sessions: rose 9.79%.\n\nThe stock's daily-return volatility estimated from twenty completed sessions is 1.71%; this measures variability, not expected appreciation.\n\nThe SPY broad-market closing-price change over the last completed session: fell 1.71%.\n\nThe SPY broad-market closing-price change over the last five completed sessions: fell 1.61%.\n\nThe SPY broad-market closing-price change over the last twenty completed sessions: fell 1.61%.\n\nSPY's daily-return volatility estimated from twenty completed sessions is 0.74%; this measures variability, not expected appreciation.\n\nOver 5 completed sessions the stock outperformed SPY by 3.27 percentage points (stock return minus SPY return).\n\nOver 20 completed sessions the stock outperformed SPY by 11.40 percentage points (stock return minus SPY return).\n\nA previously fitted, training-only market model supplied these reference probabilities: up 65.1672%; flat 13.2237%; down 21.6091%. They are predictions, not facts about what happened later.\n\nThe code-computed five-session volatility reference is 3.83%. It measures a variability scale, not an expected return or a guarantee of the flat probability.\n\nPrediction target: buy at the first regular-session opening price after the cutoff; compare with the fifth regular-session closing price, counting entry as session one. Predict raw price return. Up means above +1.00%; flat means -1.00% through +1.00% inclusive; down means below -1.00%. The initial pre-entry price reaction is outside the target.\n\nDo not infer analyst consensus, corporate cash spending, incremental sales, or a news-attributed price reaction when it is not supplied."
+}

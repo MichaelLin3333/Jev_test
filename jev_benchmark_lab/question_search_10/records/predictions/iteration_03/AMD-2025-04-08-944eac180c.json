@@ -1,0 +1,94 @@
+{
+  "case_id": "AMD-2025-04-08-944eac180c",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.9013984715646775,
+    "flat": 0.029370044193663503,
+    "down": 0.06923148424165904
+  },
+  "requests": [
+    "c43beb59157201cf3d7548dc1d2e8cee6667f8d048b5488a9cb012e77637d656"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.16
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.05
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.9,
+      "probabilities": {
+        "positive": 0.04,
+        "negative": 0.04,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.92
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.91,
+      "probabilities": {
+        "positive": 0.03,
+        "negative": 0.03,
+        "mixed": 0.0,
+        "unchanged": 0.01,
+        "unknown": 0.93
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.14
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "negative",
+      "confidence": 0.56,
+      "probabilities": {
+        "positive": 0.15,
+        "negative": 0.65,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.19
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.15
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "plan",
+      "confidence": 0.86,
+      "probabilities": {
+        "plan": 0.89,
+        "binding": 0.06,
+        "realized": 0.01,
+        "canceled": 0.0,
+        "unknown": 0.04
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "6247bade87ff8d5b4605d4b476f6b8dc48d253a3c88ce513e16c0c9cfff34865",
+  "recorded_at": "2026-10-19T16:02:57.664555+00:00"
+}

@@ -1,0 +1,336 @@
+{
+  "completed_at": "2026-10-19T15:08:12.109420+00:00",
+  "selection_sha256": "52ccc8ad5f2bd738891ecc76af519cb8e6ba2e6b0d7eeaadf3df3a660c8c7b78",
+  "single_final_pass": true,
+  "selected_jev_strategy": "market_plus_jev_strong",
+  "results": {
+    "always_up": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 1.1333333333333333,
+      "selection_brier_failure_penalized": 1.1333333333333333,
+      "accuracy": 0.43333333333333335,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 4,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 30,
+        "coverage_of_labeled": 1.0,
+        "conditional_accuracy": 0.43333333333333335,
+        "conditional_brier": 1.1333333333333333
+      }
+    },
+    "always_flat": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 1.7333333333333334,
+      "selection_brier_failure_penalized": 1.7333333333333334,
+      "accuracy": 0.13333333333333333,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 0.0,
+        "flat": 1.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 0,
+          "flat": 13,
+          "down": 0
+        },
+        "flat": {
+          "up": 0,
+          "flat": 4,
+          "down": 0
+        },
+        "down": {
+          "up": 0,
+          "flat": 13,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 30,
+        "coverage_of_labeled": 1.0,
+        "conditional_accuracy": 0.13333333333333333,
+        "conditional_brier": 1.7333333333333334
+      }
+    },
+    "always_down": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 1.1333333333333333,
+      "selection_brier_failure_penalized": 1.1333333333333333,
+      "accuracy": 0.43333333333333335,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 0.0,
+        "flat": 0.0,
+        "down": 1.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 0,
+          "flat": 0,
+          "down": 13
+        },
+        "flat": {
+          "up": 0,
+          "flat": 0,
+          "down": 4
+        },
+        "down": {
+          "up": 0,
+          "flat": 0,
+          "down": 13
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 30,
+        "coverage_of_labeled": 1.0,
+        "conditional_accuracy": 0.43333333333333335,
+        "conditional_brier": 1.1333333333333333
+      }
+    },
+    "training_prior": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 0.6794984173362552,
+      "selection_brier_failure_penalized": 0.6794984173362552,
+      "accuracy": 0.43333333333333335,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 4,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 30,
+        "coverage_of_labeled": 1.0,
+        "conditional_accuracy": 0.43333333333333335,
+        "conditional_brier": 0.6794984173362552
+      }
+    },
+    "market_only": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 0.733693766340583,
+      "selection_brier_failure_penalized": 0.733693766340583,
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.3076923076923077,
+      "recall_by_actual_class": {
+        "up": 0.9230769230769231,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 12,
+          "flat": 0,
+          "down": 1
+        },
+        "flat": {
+          "up": 3,
+          "flat": 0,
+          "down": 1
+        },
+        "down": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 15,
+        "coverage_of_labeled": 0.5,
+        "conditional_accuracy": 0.5333333333333333,
+        "conditional_brier": 0.6597799949179353
+      }
+    },
+    "legacy": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 1.3850266666666669,
+      "selection_brier_failure_penalized": 1.3850266666666669,
+      "accuracy": 0.2,
+      "balanced_accuracy": 0.3846153846153846,
+      "recall_by_actual_class": {
+        "up": 0.15384615384615385,
+        "flat": 1.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 2,
+          "flat": 10,
+          "down": 1
+        },
+        "flat": {
+          "up": 0,
+          "flat": 4,
+          "down": 0
+        },
+        "down": {
+          "up": 4,
+          "flat": 9,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 30,
+        "coverage_of_labeled": 1.0,
+        "conditional_accuracy": 0.2,
+        "conditional_brier": 1.3850266666666669
+      }
+    },
+    "market_plus_jev_strong": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 0.6647975941221959,
+      "selection_brier_failure_penalized": 0.6647975941221959,
+      "accuracy": 0.43333333333333335,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 4,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 14,
+        "coverage_of_labeled": 0.4666666666666667,
+        "conditional_accuracy": 0.5714285714285714,
+        "conditional_brier": 0.5574255947755562
+      }
+    },
+    "market_only_strong": {
+      "scheduled": 30,
+      "labeled": 30,
+      "label_coverage": 1.0,
+      "valid_forecasts": 30,
+      "forecast_coverage": 1.0,
+      "scored": 30,
+      "brier": 0.6851537335562036,
+      "selection_brier_failure_penalized": 0.6851537335562036,
+      "accuracy": 0.43333333333333335,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 4,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 13,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 16,
+        "coverage_of_labeled": 0.5333333333333333,
+        "conditional_accuracy": 0.5,
+        "conditional_brier": 0.634327266779882
+      }
+    }
+  }
+}

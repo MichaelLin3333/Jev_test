@@ -1,0 +1,94 @@
+{
+  "case_id": "AMD-2023-09-27-f35d998276",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.659711567724846,
+    "flat": 0.12083536237230497,
+    "down": 0.21945306990284918
+  },
+  "requests": [
+    "4d08bf2218f5e38896f2ae695616c86a67e334612057fe4abfec275de1c5f957"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.36
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.85
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.69,
+      "probabilities": {
+        "positive": 0.24,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.75
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "positive": 0.01,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.76,
+      "probabilities": {
+        "positive": 0.18,
+        "negative": 0.0,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.8099999999999999
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.41,
+      "probabilities": {
+        "positive": 0.53,
+        "negative": 0.04,
+        "mixed": 0.05,
+        "unchanged": 0.0,
+        "unknown": 0.38
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.12
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "plan",
+      "confidence": 0.42,
+      "probabilities": {
+        "plan": 0.54,
+        "binding": 0.05,
+        "realized": 0.35,
+        "canceled": 0.0,
+        "unknown": 0.06
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "a8be9b2147a0f3058f13496ba42c58154cc8196b176e2ef45936da80a85aba7d",
+  "recorded_at": "2026-10-19T16:02:38.270300+00:00"
+}

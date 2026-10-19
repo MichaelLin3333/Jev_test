@@ -1,0 +1,1918 @@
+{
+  "iteration": 10,
+  "proposal": {
+    "iteration": 10,
+    "name": "retained_branch_ensemble",
+    "change": "Equal-probability average of the three earlier candidates with best validation accuracy, breaking ties with the declared ranking. No new fitting or calls.",
+    "questions": {
+      "ensemble": "Equal probability average of the three retained earlier branches; no new questions or optimized weights."
+    },
+    "created_at": "2026-10-19T16:06:17.856563+00:00",
+    "previous_best": 1,
+    "observed_failure": "Best development strategy 1 has full-coverage validation accuracy 0.5333, balanced accuracy 0.3417; target is 0.70. Confusion matrix: {'up': {'up': 23, 'flat': 0, 'down': 1}, 'flat': {'up': 6, 'flat': 0, 'down': 0}, 'down': {'up': 14, 'flat': 0, 'down': 1}}.",
+    "expected_behavior": "Equal averaging of retained branches may improve robustness without optimizing more weights.",
+    "adaptive_wording_from_aggregate_feedback": "Explicitly examine a plausible adverse economic path and bearish market/relative trend; favorable issuer language must not eliminate the down outcome.",
+    "parents": [
+      1,
+      7,
+      3
+    ]
+  },
+  "completed_at": "2026-10-19T16:06:17.861693+00:00",
+  "metrics": {
+    "train": {
+      "scheduled": 75,
+      "labeled": 74,
+      "label_coverage": 0.9866666666666667,
+      "valid_forecasts": 75,
+      "forecast_coverage": 1.0,
+      "scored": 74,
+      "brier": 0.5401896713225982,
+      "selection_brier_failure_penalized": 0.5401896713225982,
+      "accuracy": 0.6081081081081081,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 45,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 12,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 17,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 63,
+        "coverage_of_labeled": 0.8513513513513513,
+        "conditional_accuracy": 0.6507936507936508,
+        "conditional_brier": 0.5179816255180194
+      },
+      "rows": [
+        {
+          "case_id": "MSFT-2023-03-06-3cb81e2ea9",
+          "actual": "flat",
+          "return": -0.009285952935534013,
+          "probabilities": {
+            "up": 0.6995661356203632,
+            "flat": 0.15076912609953488,
+            "down": 0.14966473828010193
+          },
+          "prediction": "up",
+          "brier": 1.2329853891770075,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-03-14-211fee3be9",
+          "actual": "up",
+          "return": 0.10556648630274364,
+          "probabilities": {
+            "up": 0.733585642907741,
+            "flat": 0.12276492350431974,
+            "down": 0.14364943358793922
+          },
+          "prediction": "up",
+          "brier": 0.10668299587803894,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-03-14-38e320de4c",
+          "actual": "up",
+          "return": 0.04773260875633864,
+          "probabilities": {
+            "up": 0.6150093731854863,
+            "flat": 0.11370246384039127,
+            "down": 0.2712881629741224
+          },
+          "prediction": "up",
+          "brier": 0.23474330038828162,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-03-15-b8f292d963",
+          "actual": "up",
+          "return": 0.1015940375966852,
+          "probabilities": {
+            "up": 0.7767597027056592,
+            "flat": 0.0830809061587542,
+            "down": 0.14015939113558662
+          },
+          "prediction": "up",
+          "brier": 0.07638332222772375,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-03-21-69f67c7424",
+          "actual": "flat",
+          "return": -0.00056762119513709,
+          "probabilities": {
+            "up": 0.711488606253857,
+            "flat": 0.15674650400748277,
+            "down": 0.13176488973866018
+          },
+          "prediction": "up",
+          "brier": 1.2346544815004996,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-03-28-8187c6b9f5",
+          "actual": "up",
+          "return": 0.029466595470651374,
+          "probabilities": {
+            "up": 0.7402054911175183,
+            "flat": 0.13423509433645875,
+            "down": 0.12555941454602296
+          },
+          "prediction": "up",
+          "brier": 0.10127741397814788,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-04-05-e7a61727dc",
+          "actual": "up",
+          "return": 0.05304662415061228,
+          "probabilities": {
+            "up": 0.6996480587681448,
+            "flat": 0.15022541846503504,
+            "down": 0.15012652276682012
+          },
+          "prediction": "up",
+          "brier": 0.13531693779279522,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-04-10-186b1e8cc6",
+          "actual": "up",
+          "return": 0.017739387223596016,
+          "probabilities": {
+            "up": 0.614514842696328,
+            "flat": 0.16387213517297414,
+            "down": 0.2216130221306979
+          },
+          "prediction": "up",
+          "brier": 0.2245652147654875,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-04-24-f95899bc34",
+          "actual": "up",
+          "return": 0.09319876527789545,
+          "probabilities": {
+            "up": 0.6285456435808515,
+            "flat": 0.14776762946761432,
+            "down": 0.22368672695153427
+          },
+          "prediction": "up",
+          "brier": 0.2098493630355322,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-04-28-dcc7cf9581",
+          "actual": "up",
+          "return": 0.030172419108618686,
+          "probabilities": {
+            "up": 0.6275146620898849,
+            "flat": 0.1973456263933745,
+            "down": 0.17513971151674065
+          },
+          "prediction": "up",
+          "brier": 0.2083645417647731,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-05-02-fc1dbff804",
+          "actual": "up",
+          "return": 0.13789797123314637,
+          "probabilities": {
+            "up": 0.6430765563549228,
+            "flat": 0.11471576456591705,
+            "down": 0.2422076790791602
+          },
+          "prediction": "up",
+          "brier": 0.19921861106831698,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-05-03-b72c4db98f",
+          "actual": "down",
+          "return": -0.012623891207146899,
+          "probabilities": {
+            "up": 0.698322737635333,
+            "flat": 0.13133931287874945,
+            "down": 0.1703379494859175
+          },
+          "prediction": "up",
+          "brier": 1.1932437790692,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-05-04-c31e349348",
+          "actual": "up",
+          "return": 0.01620075062392101,
+          "probabilities": {
+            "up": 0.6723662055651541,
+            "flat": 0.16274789098529552,
+            "down": 0.16488590344955023
+          },
+          "prediction": "up",
+          "brier": 0.16101814043231089,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-05-09-dc82035db3",
+          "actual": "up",
+          "return": 0.01010950413631752,
+          "probabilities": {
+            "up": 0.7046858500975279,
+            "flat": 0.16306769133187146,
+            "down": 0.1322464585706006
+          },
+          "prediction": "up",
+          "brier": 0.13129064489339184,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-05-16-29d934cf8f",
+          "actual": "flat",
+          "return": -0.0008736191800599082,
+          "probabilities": {
+            "up": 0.7151193426721253,
+            "flat": 0.14763444818216254,
+            "down": 0.13724620914571226
+          },
+          "prediction": "up",
+          "brier": 1.2567592301144077,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-05-16-0bd76dafa0",
+          "actual": "up",
+          "return": 0.03731747245872098,
+          "probabilities": {
+            "up": 0.7521430868654578,
+            "flat": 0.11331079280410689,
+            "down": 0.1345461203304353
+          },
+          "prediction": "up",
+          "brier": 0.0923750436504512,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-05-17-45172943c2",
+          "actual": "up",
+          "return": 0.03278078558669864,
+          "probabilities": {
+            "up": 0.7169502487397091,
+            "flat": 0.13291185308095707,
+            "down": 0.15013789817933365
+          },
+          "prediction": "up",
+          "brier": 0.1203241108476344,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-06-08-77d57491e3",
+          "actual": "up",
+          "return": 0.07110993127041916,
+          "probabilities": {
+            "up": 0.6098103703538406,
+            "flat": 0.18923640019011176,
+            "down": 0.20095322945604774
+          },
+          "prediction": "up",
+          "brier": 0.22844056266913415,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-06-09-78fc4b2f86",
+          "actual": "up",
+          "return": 0.08908164571097164,
+          "probabilities": {
+            "up": 0.7085519709776787,
+            "flat": 0.12798783929512317,
+            "down": 0.16346018972719803
+          },
+          "prediction": "up",
+          "brier": 0.12804207425408165,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-06-13-e6b6a216ba",
+          "actual": "down",
+          "return": -0.1139650542010813,
+          "probabilities": {
+            "up": 0.8333333333333334,
+            "flat": 0.06333333333333332,
+            "down": 0.10333333333333335
+          },
+          "prediction": "up",
+          "brier": 1.5024666666666666,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-06-14-78b53acaad",
+          "actual": "up",
+          "return": 0.046199110002929596,
+          "probabilities": {
+            "up": 0.6752294419760888,
+            "flat": 0.15771745449091215,
+            "down": 0.16705310353299926
+          },
+          "prediction": "up",
+          "brier": 0.15825745021026258,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-06-15-3b7e9de22c",
+          "actual": "flat",
+          "return": -0.00026778264286349745,
+          "probabilities": {
+            "up": 0.6180412886462817,
+            "flat": 0.21266132324750295,
+            "down": 0.16929738810621534
+          },
+          "prediction": "up",
+          "brier": 1.030538832001516,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-06-15-73585058e0",
+          "actual": "flat",
+          "return": -0.00026778264286349745,
+          "probabilities": {
+            "up": 0.6113746219796151,
+            "flat": 0.23599465658083627,
+            "down": 0.15263072143954867
+          },
+          "prediction": "up",
+          "brier": 0.9807792303009086,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-07-17-a2a30248e2",
+          "actual": "down",
+          "return": -0.06198539381300484,
+          "probabilities": {
+            "up": 0.6825382889520762,
+            "flat": 0.14188046937836105,
+            "down": 0.17558124166956268
+          },
+          "prediction": "up",
+          "brier": 1.165654872563752,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-07-18-adba3ff6f2",
+          "actual": "down",
+          "return": -0.06842541502835957,
+          "probabilities": {
+            "up": 0.557523498657521,
+            "flat": 0.16541295021591917,
+            "down": 0.27706355112655984
+          },
+          "prediction": "up",
+          "brier": 0.8608310047641973,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-07-18-bc77d6283b",
+          "actual": "down",
+          "return": -0.02977191157891334,
+          "probabilities": {
+            "up": 0.6633721480548611,
+            "flat": 0.15772488834733456,
+            "down": 0.17890296359780433
+          },
+          "prediction": "up",
+          "brier": 1.1391400904075684,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-07-24-a64220603c",
+          "actual": "up",
+          "return": 0.03978545480041021,
+          "probabilities": {
+            "up": 0.6364304254323901,
+            "flat": 0.12398617476587374,
+            "down": 0.23958339980173604
+          },
+          "prediction": "up",
+          "brier": 0.2049556125449051,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-08-03-6bc28a52c8",
+          "actual": "down",
+          "return": -0.040696436383591446,
+          "probabilities": {
+            "up": 0.5796682841853187,
+            "flat": 0.19388791696487628,
+            "down": 0.22644379884980503
+          },
+          "prediction": "up",
+          "brier": 0.971997040373251,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-08-23-29a64831da",
+          "actual": "down",
+          "return": -0.018958094468453417,
+          "probabilities": {
+            "up": 0.703303081730767,
+            "flat": 0.12424911810804455,
+            "down": 0.1724478001611883
+          },
+          "prediction": "up",
+          "brier": 1.1949157115806772,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-08-25-98b150dbe2",
+          "actual": "up",
+          "return": 0.057794487841781754,
+          "probabilities": {
+            "up": 0.6659159833026681,
+            "flat": 0.0958266024787533,
+            "down": 0.2382574142185786
+          },
+          "prediction": "up",
+          "brier": 0.1775614633853675,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-09-07-58f1606765",
+          "actual": "up",
+          "return": 0.04177528223048187,
+          "probabilities": {
+            "up": 0.6554402415733976,
+            "flat": 0.16316848569235218,
+            "down": 0.18139127273425007
+          },
+          "prediction": "up",
+          "brier": 0.178248175674285,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-09-15-cf19e59b34",
+          "actual": "down",
+          "return": -0.04582426860311929,
+          "probabilities": {
+            "up": 0.5575465569680041,
+            "flat": 0.07700432958979102,
+            "down": 0.3654491134422049
+          },
+          "prediction": "up",
+          "brier": 0.7194426575937328,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-09-18-e3419c2e5e",
+          "actual": "flat",
+          "return": -0.008111775612601372,
+          "probabilities": {
+            "up": 0.6656892887621922,
+            "flat": 0.17689383175430792,
+            "down": 0.15741687948349992
+          },
+          "prediction": "up",
+          "brier": 1.1454260673231416,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-09-21-fdc6a79752",
+          "actual": "down",
+          "return": -0.02390138335840374,
+          "probabilities": {
+            "up": 0.7233787163402384,
+            "flat": 0.09571944084024904,
+            "down": 0.1809018428195126
+          },
+          "prediction": "up",
+          "brier": 1.2033607697052915,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-09-27-f35d998276",
+          "actual": "up",
+          "return": 0.06258931080878125,
+          "probabilities": {
+            "up": 0.7165705225749486,
+            "flat": 0.10694512079076833,
+            "down": 0.17648435663428308
+          },
+          "prediction": "up",
+          "brier": 0.12291625567100659,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-09-27-71488b1b1b",
+          "actual": "up",
+          "return": 0.03723507573782416,
+          "probabilities": {
+            "up": 0.7833333333333333,
+            "flat": 0.07666666666666667,
+            "down": 0.13999999999999999
+          },
+          "prediction": "up",
+          "brier": 0.07242222222222222,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-10-05-d402e7ef31",
+          "actual": "up",
+          "return": 0.0753715533329703,
+          "probabilities": {
+            "up": 0.7019650621223296,
+            "flat": 0.14597511503890362,
+            "down": 0.15205982283876676
+          },
+          "prediction": "up",
+          "brier": 0.13325574812812516,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-10-19-4e97ce7c71",
+          "actual": "down",
+          "return": -0.08418068745709031,
+          "probabilities": {
+            "up": 0.728554882872645,
+            "flat": 0.0852583956292081,
+            "down": 0.18618672149814694
+          },
+          "prediction": "up",
+          "brier": 1.2003532636487746,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-10-26-4b73af218c",
+          "actual": "up",
+          "return": 0.054141618633243224,
+          "probabilities": {
+            "up": 0.7365815623871882,
+            "flat": 0.0899658399851429,
+            "down": 0.17345259762766885
+          },
+          "prediction": "up",
+          "brier": 0.10756892926239316,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-10-31-13fc65c0e2",
+          "actual": "up",
+          "return": 0.0632748966328582,
+          "probabilities": {
+            "up": 0.5539668452519765,
+            "flat": 0.22939190253953576,
+            "down": 0.21664125220848784
+          },
+          "prediction": "up",
+          "brier": 0.29849965224364383,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-11-03-b4cef55844",
+          "actual": "up",
+          "return": 0.06735120343022025,
+          "probabilities": {
+            "up": 0.6403291528180618,
+            "flat": 0.16858884131038007,
+            "down": 0.19108200587155802
+          },
+          "prediction": "up",
+          "brier": 0.19429764869484778,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-11-15-4e2cf6af91",
+          "actual": "up",
+          "return": 0.036797508263845626,
+          "probabilities": {
+            "up": 0.6512615811335182,
+            "flat": 0.1783987634887103,
+            "down": 0.1703396553777714
+          },
+          "prediction": "up",
+          "brier": 0.18246020180201244,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2023-11-22-97b5605322",
+          "actual": "flat",
+          "return": -0.007129354469313491,
+          "probabilities": {
+            "up": 0.6855622070700998,
+            "flat": 0.15048814321483903,
+            "down": 0.16394964971506118
+          },
+          "prediction": "up",
+          "brier": 1.2185454222230896,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2023-11-28-dbef380338",
+          "actual": "up",
+          "return": 0.013200651404040345,
+          "probabilities": {
+            "up": 0.6250182534298553,
+            "flat": 0.21341043136739835,
+            "down": 0.16157131520274634
+          },
+          "prediction": "up",
+          "brier": 0.21226061237356048,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2023-12-04-7bff6c77f7",
+          "actual": "up",
+          "return": 0.013235026400265026,
+          "probabilities": {
+            "up": 0.583535319973142,
+            "flat": 0.15476261062780705,
+            "down": 0.26170206939905105
+          },
+          "prediction": "up",
+          "brier": 0.26588226848595314,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2023-12-15-e962ff707c",
+          "actual": "up",
+          "return": 0.04714354374829608,
+          "probabilities": {
+            "up": 0.5024127354660307,
+            "flat": 0.20545080095747933,
+            "down": 0.29213646357649
+          },
+          "prediction": "up",
+          "brier": 0.37514683079144595,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2023-12-26-12ff068995",
+          "actual": "down",
+          "return": -0.039223632738763115,
+          "probabilities": {
+            "up": 0.5799071316186849,
+            "flat": 0.1466530983742107,
+            "down": 0.27343977000710445
+          },
+          "prediction": "up",
+          "brier": 0.8856891803722958,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-01-04-9955fd010c",
+          "actual": "up",
+          "return": 0.0821757975835379,
+          "probabilities": {
+            "up": 0.7263221733765688,
+            "flat": 0.08831482193667255,
+            "down": 0.1853630046867587
+          },
+          "prediction": "up",
+          "brier": 0.11705850406553438,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-01-09-66c19dc1e7",
+          "actual": "up",
+          "return": 0.02276697499443098,
+          "probabilities": {
+            "up": 0.682916855532826,
+            "flat": 0.15641403289395459,
+            "down": 0.16066911157321942
+          },
+          "prediction": "up",
+          "brier": 0.15082163360506948,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-01-15-993d709598",
+          "actual": "flat",
+          "return": 0.007239765475290319,
+          "probabilities": {
+            "up": 0.6948424988347831,
+            "flat": 0.14579512980571066,
+            "down": 0.15936237135950626
+          },
+          "prediction": "up",
+          "brier": 1.2378684238559334,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-01-16-ac86bab64b",
+          "actual": "up",
+          "return": 0.06292206634727679,
+          "probabilities": {
+            "up": 0.6825172410176753,
+            "flat": 0.13599900948555235,
+            "down": 0.1814837494967724
+          },
+          "prediction": "up",
+          "brier": 0.15222738416348747,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-01-17-53d3ce052a",
+          "actual": "up",
+          "return": 0.04519320666135658,
+          "probabilities": {
+            "up": 0.4798646117267324,
+            "flat": 0.11356374319006883,
+            "down": 0.4065716450831989
+          },
+          "prediction": "up",
+          "brier": 0.4487380484871813,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-01-31-234f34a87c",
+          "actual": "up",
+          "return": 0.12880838560164903,
+          "probabilities": {
+            "up": 0.7081688648296183,
+            "flat": 0.13245995361039659,
+            "down": 0.15937118155998511
+          },
+          "prediction": "up",
+          "brier": 0.12811022427712776,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-02-08-fb1849bf6e",
+          "actual": "up",
+          "return": 0.030127742849815266,
+          "probabilities": {
+            "up": 0.6772378714295963,
+            "flat": 0.15332594977892353,
+            "down": 0.16943617879148012
+          },
+          "prediction": "up",
+          "brier": 0.15639285719836518,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-02-13-ffd8837a08",
+          "actual": "down",
+          "return": -0.05291985859209594,
+          "probabilities": {
+            "up": 0.7017804612702004,
+            "flat": 0.14458817746477184,
+            "down": 0.15363136126502783
+          },
+          "prediction": "up",
+          "brier": 1.2297414295172895,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-02-19-513f977eae",
+          "actual": "up",
+          "return": 0.025589689564920564,
+          "probabilities": {
+            "up": 0.7121319265008305,
+            "flat": 0.12872961672397032,
+            "down": 0.1591384567751993
+          },
+          "prediction": "up",
+          "brier": 0.12476439038681555,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-02-21-fb72cb9fce",
+          "actual": "down",
+          "return": -0.01122736868629962,
+          "probabilities": {
+            "up": 0.5337878970491274,
+            "flat": 0.139915621434473,
+            "down": 0.3262964815163995
+          },
+          "prediction": "up",
+          "brier": 0.7583823309747076,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-02-29-6cdf0bceb6",
+          "actual": "flat",
+          "return": -0.0051790172444690415,
+          "probabilities": {
+            "up": 0.6344676725807198,
+            "flat": 0.21454590746794253,
+            "down": 0.1509864199513378
+          },
+          "prediction": "up",
+          "brier": 1.042284258035075,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-03-06-1561c6fe28",
+          "actual": "flat",
+          "return": 0.008096934050898189,
+          "probabilities": {
+            "up": 0.6848429023580863,
+            "flat": 0.14249842974130875,
+            "down": 0.1726586679006049
+          },
+          "prediction": "up",
+          "brier": 1.23412975950758,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-03-15-56f87bcb8b",
+          "actual": "up",
+          "return": 0.034978853915208205,
+          "probabilities": {
+            "up": 0.7066717205251561,
+            "flat": 0.12399947894833185,
+            "down": 0.169328800526512
+          },
+          "prediction": "up",
+          "brier": 0.1300895930068772,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-04-01-b64f91b27d",
+          "actual": "down",
+          "return": -0.05332371571363634,
+          "probabilities": {
+            "up": 0.5691005714278045,
+            "flat": 0.15199211398370485,
+            "down": 0.27890731458849066
+          },
+          "prediction": "up",
+          "brier": 0.8669517240666712,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-04-02-91943b81d1",
+          "actual": "up",
+          "return": 0.015605240563039352,
+          "probabilities": {
+            "up": 0.6354443259967564,
+            "flat": 0.2066779686541289,
+            "down": 0.1578777053491147
+          },
+          "prediction": "up",
+          "brier": 0.20054199202125822,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-04-03-9d55d805cd",
+          "actual": "flat",
+          "return": 0.006603218877145694,
+          "probabilities": {
+            "up": 0.6800125915621577,
+            "flat": 0.15197282920159472,
+            "down": 0.16801457923624752
+          },
+          "prediction": "up",
+          "brier": 1.2097961059313629,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-04-11-38856ce803",
+          "actual": "down",
+          "return": -0.04143235078789074,
+          "probabilities": {
+            "up": 0.6917008513175157,
+            "flat": 0.14331127775362407,
+            "down": 0.16498787092886036
+          },
+          "prediction": "up",
+          "brier": 1.1962334457406698,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-04-24-c93e1f6631",
+          "actual": "flat",
+          "return": 0.0023094781233117707,
+          "probabilities": {
+            "up": 0.6162039008049743,
+            "flat": 0.18536163648930584,
+            "down": 0.19843446270571974
+          },
+          "prediction": "up",
+          "brier": 1.0827191466599564,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-04-24-6173a916e3",
+          "actual": "up",
+          "return": 0.05291124854968177,
+          "probabilities": {
+            "up": 0.6743482261165402,
+            "flat": 0.06814011546447053,
+            "down": 0.2575116584189892
+          },
+          "prediction": "up",
+          "brier": 0.17700440739065357,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-05-01-5549f493ea",
+          "actual": "up",
+          "return": 0.07693011131016197,
+          "probabilities": {
+            "up": 0.6502554054202445,
+            "flat": 0.05837251877494994,
+            "down": 0.29137207580480545
+          },
+          "prediction": "up",
+          "brier": 0.21062631894469072,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-05-02-322cd2e7eb",
+          "actual": "down",
+          "return": -0.01114378055334513,
+          "probabilities": {
+            "up": 0.689820913115875,
+            "flat": 0.1448247743598846,
+            "down": 0.16535431252424035
+          },
+          "prediction": "up",
+          "brier": 1.1934605310622945,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-05-08-db51ee778e",
+          "actual": "up",
+          "return": 0.042708764302187105,
+          "probabilities": {
+            "up": 0.6602418399292416,
+            "flat": 0.12471077035478584,
+            "down": 0.2150473897159726
+          },
+          "prediction": "up",
+          "brier": 0.17723376340080463,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-05-14-159e32d382",
+          "actual": "up",
+          "return": 0.023628345244407722,
+          "probabilities": {
+            "up": 0.6895261508798001,
+            "flat": 0.15227917949588995,
+            "down": 0.15819466962431009
+          },
+          "prediction": "up",
+          "brier": 0.14460851299299876,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-06-03-2781994dfb",
+          "actual": null,
+          "return": null,
+          "probabilities": {
+            "up": 0.6988408496846178,
+            "flat": 0.13973089325510413,
+            "down": 0.161428257060278
+          },
+          "prediction": null,
+          "brier": null,
+          "correct": null,
+          "label_status": "split_in_target_window",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-06-04-e08689eaf9",
+          "actual": "up",
+          "return": 0.03559032862803176,
+          "probabilities": {
+            "up": 0.6309621558294742,
+            "flat": 0.1381734662343329,
+            "down": 0.23086437793619288
+          },
+          "prediction": "up",
+          "brier": 0.20857919820110488,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-06-10-65db70002d",
+          "actual": "down",
+          "return": -0.013084150177667415,
+          "probabilities": {
+            "up": 0.5900809459748007,
+            "flat": 0.13352646920494085,
+            "down": 0.27639258482025847
+          },
+          "prediction": "up",
+          "brier": 0.8896325320839605,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-06-20-4f9161d77f",
+          "actual": "up",
+          "return": 0.01763394992456908,
+          "probabilities": {
+            "up": 0.6775377522506223,
+            "flat": 0.125121923744649,
+            "down": 0.19734032400472878
+          },
+          "prediction": "up",
+          "brier": 0.15858060050343414,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-06-23-b2c276e3bc",
+          "actual": "up",
+          "return": 0.010056067489817948,
+          "probabilities": {
+            "up": 0.6656657676040431,
+            "flat": 0.14089493660094754,
+            "down": 0.1934392957950095
+          },
+          "prediction": "up",
+          "brier": 0.16904952326924794,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        }
+      ],
+      "full_coverage_accuracy": 0.6081081081081081,
+      "correct": 45,
+      "goal_70_reached": false
+    },
+    "validation": {
+      "scheduled": 45,
+      "labeled": 45,
+      "label_coverage": 1.0,
+      "valid_forecasts": 45,
+      "forecast_coverage": 1.0,
+      "scored": 45,
+      "brier": 0.6192501397518616,
+      "selection_brier_failure_penalized": 0.6192501397518616,
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.3333333333333333,
+      "recall_by_actual_class": {
+        "up": 1.0,
+        "flat": 0.0,
+        "down": 0.0
+      },
+      "confusion_matrix": {
+        "up": {
+          "up": 24,
+          "flat": 0,
+          "down": 0
+        },
+        "flat": {
+          "up": 6,
+          "flat": 0,
+          "down": 0
+        },
+        "down": {
+          "up": 15,
+          "flat": 0,
+          "down": 0
+        }
+      },
+      "abstention_policy": {
+        "threshold": 0.6,
+        "accepted": 35,
+        "coverage_of_labeled": 0.7777777777777778,
+        "conditional_accuracy": 0.5428571428571428,
+        "conditional_brier": 0.6213414412646895
+      },
+      "rows": [
+        {
+          "case_id": "MSFT-2024-07-20-06242bbc00",
+          "actual": "down",
+          "return": -0.037393375159524955,
+          "probabilities": {
+            "up": 0.5315392832162756,
+            "flat": 0.14040225161807188,
+            "down": 0.32805846516565246
+          },
+          "prediction": "up",
+          "brier": 0.7537522280970352,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-07-30-a30a176448",
+          "actual": "down",
+          "return": -0.13633651983182024,
+          "probabilities": {
+            "up": 0.7440021455862876,
+            "flat": 0.04281869240318872,
+            "down": 0.2131791620105236
+          },
+          "prediction": "up",
+          "brier": 1.1744596641505805,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-08-01-30e485bb0b",
+          "actual": "down",
+          "return": -0.02664839835975152,
+          "probabilities": {
+            "up": 0.6275202601555906,
+            "flat": 0.19976582520099564,
+            "down": 0.17271391464341376
+          },
+          "prediction": "up",
+          "brier": 1.1180903288485997,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-08-13-05a026e972",
+          "actual": "up",
+          "return": 0.024108004566748227,
+          "probabilities": {
+            "up": 0.5976077857179778,
+            "flat": 0.17783297721930058,
+            "down": 0.2245592370627216
+          },
+          "prediction": "up",
+          "brier": 0.24397091285166075,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-08-15-2b4fa7af77",
+          "actual": "up",
+          "return": 0.014761320209323442,
+          "probabilities": {
+            "up": 0.6765912507245119,
+            "flat": 0.152394407550092,
+            "down": 0.1710143417253963
+          },
+          "prediction": "up",
+          "brier": 0.15706317963624972,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-09-17-55dae3f727",
+          "actual": "up",
+          "return": 0.0488949474137593,
+          "probabilities": {
+            "up": 0.6645765684138781,
+            "flat": 0.1824195866741409,
+            "down": 0.15300384491198096
+          },
+          "prediction": "up",
+          "brier": 0.1691959606172237,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-09-26-3323ae4e96",
+          "actual": "down",
+          "return": -0.02764503070298396,
+          "probabilities": {
+            "up": 0.8466666666666667,
+            "flat": 0.06333333333333332,
+            "down": 0.09000000000000001
+          },
+          "prediction": "up",
+          "brier": 1.5489555555555556,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-09-26-6af65674c9",
+          "actual": "down",
+          "return": -0.03471445321221351,
+          "probabilities": {
+            "up": 0.6461418222568732,
+            "flat": 0.19323304353120663,
+            "down": 0.16062513421192015
+          },
+          "prediction": "up",
+          "brier": 1.159388428898523,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-10-15-5e64c3c371",
+          "actual": "up",
+          "return": 0.01839375818035125,
+          "probabilities": {
+            "up": 0.6921323976082232,
+            "flat": 0.13994189516600553,
+            "down": 0.16792570722577138
+          },
+          "prediction": "up",
+          "brier": 0.14256523777238994,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-10-16-960da809c4",
+          "actual": "down",
+          "return": -0.011438111008527341,
+          "probabilities": {
+            "up": 0.6419222997825588,
+            "flat": 0.19262811709921687,
+            "down": 0.1654495831182244
+          },
+          "prediction": "up",
+          "brier": 1.1456442287728643,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-10-17-8a051f6b32",
+          "actual": "up",
+          "return": 0.012547815072761346,
+          "probabilities": {
+            "up": 0.6954467530522671,
+            "flat": 0.14433725011291434,
+            "down": 0.1602159968348186
+          },
+          "prediction": "up",
+          "brier": 0.13925508763833938,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-10-21-7d4fa323d2",
+          "actual": "flat",
+          "return": 0.006738747436409446,
+          "probabilities": {
+            "up": 0.5630482702595968,
+            "flat": 0.1744930739476103,
+            "down": 0.262458655792793
+          },
+          "prediction": "up",
+          "brier": 1.0673695856033494,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-10-23-d883c006b4",
+          "actual": "flat",
+          "return": 0.0005218296295593387,
+          "probabilities": {
+            "up": 0.6507712176302353,
+            "flat": 0.17032977403672064,
+            "down": 0.1788990083330441
+          },
+          "prediction": "up",
+          "brier": 1.1438607167284445,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-10-23-bbc88f6fc2",
+          "actual": "down",
+          "return": -0.010509948227176324,
+          "probabilities": {
+            "up": 0.7244837538245399,
+            "flat": 0.10432847869605627,
+            "down": 0.17118776747940398
+          },
+          "prediction": "up",
+          "brier": 1.2226908577985045,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2024-10-31-2e9f772eed",
+          "actual": "up",
+          "return": 0.040145674966647865,
+          "probabilities": {
+            "up": 0.5703435719231555,
+            "flat": 0.09808789303515536,
+            "down": 0.33156853504168915
+          },
+          "prediction": "up",
+          "brier": 0.3041635743775205,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-11-19-15cad4b88f",
+          "actual": "flat",
+          "return": -0.00892347030262727,
+          "probabilities": {
+            "up": 0.5990052963633706,
+            "flat": 0.09525669109482522,
+            "down": 0.30573801254180416
+          },
+          "prediction": "up",
+          "brier": 1.2708435323930662,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2024-11-21-b0a2c0a0da",
+          "actual": "up",
+          "return": 0.0406472172748282,
+          "probabilities": {
+            "up": 0.4855187745029614,
+            "flat": 0.2372615898391499,
+            "down": 0.2772196356578887
+          },
+          "prediction": "up",
+          "brier": 0.3978347197962282,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2024-12-10-827442b978",
+          "actual": "flat",
+          "return": -0.006304430284685902,
+          "probabilities": {
+            "up": 0.6939603881239133,
+            "flat": 0.14425868099487169,
+            "down": 0.16178093088121512
+          },
+          "prediction": "up",
+          "brier": 1.2400472949345216,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2024-12-15-f5efd483fd",
+          "actual": "down",
+          "return": -0.053963994416937396,
+          "probabilities": {
+            "up": 0.5434166424613872,
+            "flat": 0.05855827179238768,
+            "down": 0.39802508574622514
+          },
+          "prediction": "up",
+          "brier": 0.661104515890158,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2024-12-17-c8cdc103bf",
+          "actual": "up",
+          "return": 0.04751233065405898,
+          "probabilities": {
+            "up": 0.5761024952020132,
+            "flat": 0.10044855561605404,
+            "down": 0.3234489491819328
+          },
+          "prediction": "up",
+          "brier": 0.2943982296262073,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2025-01-13-93a57ac5f9",
+          "actual": "up",
+          "return": 0.025585798577993774,
+          "probabilities": {
+            "up": 0.6813969596439379,
+            "flat": 0.1427917606892459,
+            "down": 0.1758112796668163
+          },
+          "prediction": "up",
+          "brier": 0.15280699030294492,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2025-01-14-a6d94f4aa0",
+          "actual": "up",
+          "return": 0.0527434860679017,
+          "probabilities": {
+            "up": 0.5982181717956553,
+            "flat": 0.054811269181897555,
+            "down": 0.3469705590224472
+          },
+          "prediction": "up",
+          "brier": 0.28482148153290554,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2025-01-15-d6393826f7",
+          "actual": "down",
+          "return": -0.057678542613711206,
+          "probabilities": {
+            "up": 0.5558159995231303,
+            "flat": 0.15663194455464202,
+            "down": 0.2875520559222276
+          },
+          "prediction": "up",
+          "brier": 0.8410470644015097,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2025-01-22-d757794294",
+          "actual": "down",
+          "return": -0.1471906629046905,
+          "probabilities": {
+            "up": 0.6760079702581239,
+            "flat": 0.1496347418670502,
+            "down": 0.17435728787482593
+          },
+          "prediction": "up",
+          "brier": 1.1610632199115403,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2025-01-28-e7d6b47115",
+          "actual": "up",
+          "return": 0.04324444806134252,
+          "probabilities": {
+            "up": 0.6891506687893582,
+            "flat": 0.14883740672056955,
+            "down": 0.16201192449007226
+          },
+          "prediction": "up",
+          "brier": 0.14502774403038443,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2025-01-29-ada56a8c49",
+          "actual": "up",
+          "return": 0.014053642391370807,
+          "probabilities": {
+            "up": 0.6562641924760856,
+            "flat": 0.03428665414797351,
+            "down": 0.30944915337594076
+          },
+          "prediction": "up",
+          "brier": 0.2150886585518668,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2025-02-21-216bbb1456",
+          "actual": "down",
+          "return": -0.012615834851964904,
+          "probabilities": {
+            "up": 0.7172240281792361,
+            "flat": 0.13074570776146316,
+            "down": 0.15203026405930073
+          },
+          "prediction": "up",
+          "brier": 1.2505574197670348,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2025-02-28-2b2c203942",
+          "actual": "down",
+          "return": -0.011918825103263933,
+          "probabilities": {
+            "up": 0.710826043403333,
+            "flat": 0.0577354548964543,
+            "down": 0.23143850170021274
+          },
+          "prediction": "up",
+          "brier": 1.0992938234013514,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2025-03-11-64e793009a",
+          "actual": "up",
+          "return": 0.04502775312527878,
+          "probabilities": {
+            "up": 0.7403325271661085,
+            "flat": 0.0917768644509207,
+            "down": 0.1678906083829708
+          },
+          "prediction": "up",
+          "brier": 0.1040374456795865,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2025-03-15-694551af84",
+          "actual": "down",
+          "return": -0.018453925471923156,
+          "probabilities": {
+            "up": 0.6339210680619195,
+            "flat": 0.08441822121009372,
+            "down": 0.28166071072798676
+          },
+          "prediction": "up",
+          "brier": 0.9249936911168624,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2025-03-18-11516e1f88",
+          "actual": "up",
+          "return": 0.024978613631374914,
+          "probabilities": {
+            "up": 0.6804798271998062,
+            "flat": 0.16726673292536556,
+            "down": 0.15225343987482817
+          },
+          "prediction": "up",
+          "brier": 0.15325241072350923,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2025-03-18-7330272bab",
+          "actual": "up",
+          "return": 0.029163519197065297,
+          "probabilities": {
+            "up": 0.7416290776800633,
+            "flat": 0.07370418478715461,
+            "down": 0.1846667375327822
+          },
+          "prediction": "up",
+          "brier": 0.1062896443065953,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2025-03-23-a6a0355c4a",
+          "actual": "down",
+          "return": -0.06216560529783236,
+          "probabilities": {
+            "up": 0.6369411562806176,
+            "flat": 0.0939267863884547,
+            "down": 0.26913205733092754
+          },
+          "prediction": "up",
+          "brier": 0.9486842273866752,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2025-04-04-744908e951",
+          "actual": "up",
+          "return": 0.10707366279468232,
+          "probabilities": {
+            "up": 0.8445942663259686,
+            "flat": 0.034605259084729556,
+            "down": 0.12080047458930204
+          },
+          "prediction": "up",
+          "brier": 0.03994122067608585,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2025-04-08-944eac180c",
+          "actual": "up",
+          "return": 0.20285280796769964,
+          "probabilities": {
+            "up": 0.7204661571882257,
+            "flat": 0.023123348064554503,
+            "down": 0.25641049474721966
+          },
+          "prediction": "up",
+          "brier": 0.14442020031934624,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2025-04-08-79d51421a1",
+          "actual": "up",
+          "return": 0.02405409857608797,
+          "probabilities": {
+            "up": 0.717325416936801,
+            "flat": 0.039196156351703655,
+            "down": 0.2434784267114952
+          },
+          "prediction": "up",
+          "brier": 0.14072300285660555,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2025-04-15-1151ba2e3d",
+          "actual": "up",
+          "return": 0.03145798282901609,
+          "probabilities": {
+            "up": 0.7456676984521565,
+            "flat": 0.15076390182304697,
+            "down": 0.10356839972479652
+          },
+          "prediction": "up",
+          "brier": 0.09814108712508776,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2025-05-06-e9dbbf2690",
+          "actual": "up",
+          "return": 0.1112372883914306,
+          "probabilities": {
+            "up": 0.7930091129028121,
+            "flat": 0.11300035835620108,
+            "down": 0.09399052874098678
+          },
+          "prediction": "up",
+          "brier": 0.06444852782292093,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2025-05-07-e64ab129da",
+          "actual": "up",
+          "return": 0.1445242819271934,
+          "probabilities": {
+            "up": 0.7854801733446202,
+            "flat": 0.12415112514626336,
+            "down": 0.0903687015091164
+          },
+          "prediction": "up",
+          "brier": 0.06959876011578114,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AMD-2025-05-14-16218f4052",
+          "actual": "down",
+          "return": -0.042385910329510654,
+          "probabilities": {
+            "up": 0.6776196718584448,
+            "flat": 0.17694743523599343,
+            "down": 0.14543289290556174
+          },
+          "prediction": "up",
+          "brier": 1.2207637550538997,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2025-05-19-6ce23cea55",
+          "actual": "up",
+          "return": 0.011194289041704957,
+          "probabilities": {
+            "up": 0.6824895663379177,
+            "flat": 0.1770757725465741,
+            "down": 0.1404346611155083
+          },
+          "prediction": "up",
+          "brier": 0.1518905987498773,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "AAPL-2025-05-27-6ab7056626",
+          "actual": "up",
+          "return": 0.013360626070583748,
+          "probabilities": {
+            "up": 0.6086335765420422,
+            "flat": 0.1440283702147819,
+            "down": 0.24733805324317604
+          },
+          "prediction": "up",
+          "brier": 0.235087961419124,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "META-2025-06-10-7825679349",
+          "actual": "flat",
+          "return": -0.009208397353417247,
+          "probabilities": {
+            "up": 0.6843044144024247,
+            "flat": 0.14331213172696278,
+            "down": 0.1723834538706126
+          },
+          "prediction": "up",
+          "brier": 1.231902690385208,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "NVDA-2025-06-10-c1e3f7afdd",
+          "actual": "flat",
+          "return": -0.003388462008823089,
+          "probabilities": {
+            "up": 0.8466666666666667,
+            "flat": 0.07666666666666666,
+            "down": 0.07666666666666667
+          },
+          "prediction": "up",
+          "brier": 1.5752666666666668,
+          "correct": false,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        },
+        {
+          "case_id": "MSFT-2025-06-15-74730e4340",
+          "actual": "up",
+          "return": 0.02270576953124077,
+          "probabilities": {
+            "up": 0.6812048021694906,
+            "flat": 0.1614699530948198,
+            "down": 0.15732524473568948
+          },
+          "prediction": "up",
+          "brier": 0.1524541565433815,
+          "correct": true,
+          "label_status": "ok",
+          "forecast_status": "ok"
+        }
+      ],
+      "full_coverage_accuracy": 0.5333333333333333,
+      "correct": 24,
+      "goal_70_reached": false
+    }
+  },
+  "retained_as_best": false,
+  "matched_no_jev_ablation": null
+}

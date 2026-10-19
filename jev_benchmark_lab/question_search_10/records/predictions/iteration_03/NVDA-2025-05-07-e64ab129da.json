@@ -1,0 +1,94 @@
+{
+  "case_id": "NVDA-2025-05-07-e64ab129da",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.6964405200338607,
+    "flat": 0.2224533754387901,
+    "down": 0.0811061045273492
+  },
+  "requests": [
+    "d6d155ff058b4fdeab0afcf6a20d5b7da3acfac25e47b62c49b2665c3cedaa66"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.18
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.11
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.86,
+      "probabilities": {
+        "positive": 0.11,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.89
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.94,
+      "probabilities": {
+        "positive": 0.05,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.95
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "positive",
+      "confidence": 0.6,
+      "probabilities": {
+        "positive": 0.68,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.32
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.12
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "plan": 0.02,
+        "binding": 0.0,
+        "realized": 0.0,
+        "canceled": 0.0,
+        "unknown": 0.98
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "c31edc2edcd26df28474b720b205f682366c4a253fe533cc7163d22739b062ed",
+  "recorded_at": "2026-10-19T16:02:58.641774+00:00"
+}

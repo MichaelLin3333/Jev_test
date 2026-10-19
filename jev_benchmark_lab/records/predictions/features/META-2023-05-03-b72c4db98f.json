@@ -1,0 +1,99 @@
+{
+  "case_id": "META-2023-05-03-b72c4db98f",
+  "status": "ok",
+  "features": [
+    0.18,
+    0.73,
+    0.03,
+    0.05,
+    0.84,
+    -0.03,
+    0.96,
+    -0.01,
+    0.99,
+    0.01,
+    0.99,
+    0.0,
+    1.0,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.18
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.73
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.03
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.8,
+      "probabilities": {
+        "favorable": 0.07,
+        "adverse": 0.02,
+        "mixed": 0.07,
+        "unchanged": 0.0,
+        "unknown": 0.84
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.95,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.03,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.96
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.01,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    }
+  },
+  "requests": [
+    "17537d153f91107c3ba808488266ba185d3751139345b3560f0af40c251157bf"
+  ],
+  "strategy_input_sha256": "19a6e04a104da9b6436114f34d29e351a1f59cd270dd4979ae803f6a418658f8",
+  "created_at": "2026-10-19T15:00:44.346294+00:00"
+}

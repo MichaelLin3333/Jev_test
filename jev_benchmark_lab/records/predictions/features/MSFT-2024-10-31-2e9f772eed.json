@@ -1,0 +1,99 @@
+{
+  "case_id": "MSFT-2024-10-31-2e9f772eed",
+  "status": "ok",
+  "features": [
+    0.63,
+    0.58,
+    0.03,
+    0.07,
+    0.93,
+    -0.06,
+    0.93,
+    -0.02,
+    0.98,
+    0.03,
+    0.97,
+    0.01,
+    0.99,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.63
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.58
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.03
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.91,
+      "probabilities": {
+        "favorable": 0.07,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.93
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.91,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.06,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.93
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.97,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.02,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.98
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.96,
+      "probabilities": {
+        "favorable": 0.03,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.97
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.99,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.99
+      }
+    }
+  },
+  "requests": [
+    "f97e49212a697bec5a6139c29910a176f82888ec45472e21423c72035ddd905b"
+  ],
+  "strategy_input_sha256": "1605cb673b4958a0c1edd16135e4408fad304c876247865137fd57096e91dce3",
+  "created_at": "2026-10-19T15:01:01.619308+00:00"
+}

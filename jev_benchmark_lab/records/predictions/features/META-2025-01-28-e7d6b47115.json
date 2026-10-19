@@ -1,0 +1,99 @@
+{
+  "case_id": "META-2025-01-28-e7d6b47115",
+  "status": "ok",
+  "features": [
+    0.27,
+    0.79,
+    0.13,
+    0.030000000000000002,
+    0.9,
+    -0.24,
+    0.71,
+    -0.23,
+    0.76,
+    0.0,
+    0.96,
+    0.0,
+    1.0,
+    0.0
+  ],
+  "answers": {
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.27
+    },
+    "relevance": {
+      "type": "noul",
+      "noul": 0.79
+    },
+    "increment_supported": {
+      "type": "noul",
+      "noul": 0.13
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.87,
+      "probabilities": {
+        "favorable": 0.05,
+        "adverse": 0.02,
+        "mixed": 0.03,
+        "unchanged": 0.0,
+        "unknown": 0.9
+      }
+    },
+    "margin": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.64,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.25,
+        "mixed": 0.03,
+        "unchanged": 0.0,
+        "unknown": 0.71
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.7,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.23,
+        "mixed": 0.01,
+        "unchanged": 0.0,
+        "unknown": 0.76
+      }
+    },
+    "discount": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.95,
+      "probabilities": {
+        "favorable": 0.01,
+        "adverse": 0.01,
+        "mixed": 0.02,
+        "unchanged": 0.0,
+        "unknown": 0.96
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "favorable": 0.0,
+        "adverse": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    }
+  },
+  "requests": [
+    "fbafde7e0a773d43e0240f97b3ccbd846d52cbbcd3d3536dc03181c9f259eab9"
+  ],
+  "strategy_input_sha256": "1366b774048ee9b882f2ffce6de9bf516670159c629e96eb97f0b55e67610dfa",
+  "created_at": "2026-10-19T15:01:04.165667+00:00"
+}

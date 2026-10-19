@@ -1,0 +1,94 @@
+{
+  "case_id": "META-2023-09-07-58f1606765",
+  "iteration": 3,
+  "status": "ok",
+  "probabilities": {
+    "up": 0.6263207247201932,
+    "flat": 0.1395054570770565,
+    "down": 0.2341738182027502
+  },
+  "requests": [
+    "4808ecd985986875be005e433f2a6ef1b22e04496ad8c67579e2789661e3fe7a"
+  ],
+  "assessments": {
+    "relevance": {
+      "type": "noul",
+      "noul": 0.21
+    },
+    "economic_event": {
+      "type": "noul",
+      "noul": 0.17
+    },
+    "revenue": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.86,
+      "probabilities": {
+        "positive": 0.11,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.89
+      }
+    },
+    "cash": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 1.0,
+      "probabilities": {
+        "positive": 0.0,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 1.0
+      }
+    },
+    "surprise": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.91,
+      "probabilities": {
+        "positive": 0.07,
+        "negative": 0.0,
+        "mixed": 0.0,
+        "unchanged": 0.0,
+        "unknown": 0.93
+      }
+    },
+    "materiality": {
+      "type": "noul",
+      "noul": 0.2
+    },
+    "continuation": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.4,
+      "probabilities": {
+        "positive": 0.4,
+        "negative": 0.03,
+        "mixed": 0.05,
+        "unchanged": 0.0,
+        "unknown": 0.52
+      }
+    },
+    "already_in_price": {
+      "type": "noul",
+      "noul": 0.1
+    },
+    "realization": {
+      "type": "choice",
+      "choice": "unknown",
+      "confidence": 0.79,
+      "probabilities": {
+        "plan": 0.08,
+        "binding": 0.0,
+        "realized": 0.09,
+        "canceled": 0.0,
+        "unknown": 0.83
+      }
+    }
+  },
+  "route": "unsupported_news_market_fallback",
+  "input_sha256": "7a55cfb44019a8bc6399da76c374d93dd9de5adceb642d871f8afcef66a0e3e5",
+  "recorded_at": "2026-10-19T16:02:37.422878+00:00"
+}
