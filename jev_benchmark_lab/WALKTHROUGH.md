@@ -1,7 +1,7 @@
 # How to understand this experiment
 
 <!-- agentic-run-status:start -->
-This walkthrough explains the initial benchmark's implementation. For the purpose and unsuccessful outcome of the later pure agentic, RL-like prompt/question-strategy optimization loop, read [question_search_10/README.md](question_search_10/README.md). The loop used evaluation feedback to select strategies; Jev's weights were not trained. This scope note was added October 19, 2026.
+This walkthrough explains the initial benchmark's implementation. For the purpose and unsuccessful outcome of the later pure agentic, RL-like prompt/question-strategy optimization loop, read [question_search_10/README.md](question_search_10/README.md). The loop used evaluation feedback to select strategies; Jev's weights were not trained.
 <!-- agentic-run-status:end -->
 
 The final result is a small probability-score improvement with substantial uncertainty. It is not a demonstrated directional edge: the selected model predicted up on all 30 final cases, matching the constant-up classifier's 43.3% accuracy. A post-run audit also found one control window overlapping prior work. Read the final audit section in REPORT.md before interpreting the result.

@@ -1,6 +1,6 @@
 # Existing work reviewed before the new benchmark
 
-Reviewed October 19, 2026; no existing scripts or records were changed.
+Review completed; no existing scripts or records were changed.
 
 - The original 27 NVIDIA cases cover nine event categories, but are selected, short historical summaries from a single issuer. Many return windows overlap. There is no independent held-out result.
 - The four-stage study completed all cases but abstained on every forecast. This establishes execution, not forecasting skill.
@@ -13,4 +13,4 @@ Reviewed October 19, 2026; no existing scripts or records were changed.
 
 The new experiment must freeze its selection and evaluation rules before obtaining new returns, separate chronological development from a final test, use actual prices for labels, retain failed responses, and compare the same statistical predictor with and without Jev features. Historical holdout results still cannot rule out model-training knowledge.
 
-Evidence: ../jev_model_eval/qualitative_news_tests_2026-10-17/overview.json; ../jev_model_eval/forced_choice_forecasts_2026-10-18/evaluation.json; ../jev_model_eval/experimental_market_mechanism_addon_2026-10-18/summary.json.
+Evidence: [Qualitative findings](../jev_model_eval/qualitative_news_tests_2026-10-17/overview.json); [Forced-choice scores](../jev_model_eval/forced_choice_forecasts_2026-10-18/evaluation.json); [Market experiment comparison](../jev_model_eval/experimental_market_mechanism_addon_2026-10-18/summary.json).

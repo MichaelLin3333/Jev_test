@@ -1,13 +1,13 @@
 # Jev qualitative-meaning rerun
 
 <!-- agentic-run-status:start -->
-**Final status - October 19, 2026:** Qualitative explanations improved probability scoring but did not rescue prediction accuracy. The result was 45.0% accuracy versus the market-only/always-up baseline's 54.4%. Covered-case Brier below is 0.6772; including the maximum penalty for one failed forecast gives 0.6861. This remains an unsuccessful follow-up to the agentic, RL-like prompt/question-strategy optimization run, with Jev's weights unchanged. See [README.md](README.md) for the overall purpose and outcome. The original result tables and paired comparisons remain unchanged.
+**Final status:** Qualitative explanations improved probability scoring but did not rescue prediction accuracy. The result was 45.0% accuracy versus the market-only/always-up baseline's 54.4%. Covered-case Brier below is 0.6772; including the maximum penalty for one failed forecast gives 0.6861. This remains an unsuccessful follow-up to the agentic, RL-like prompt/question-strategy optimization run, with Jev's weights unchanged. See [README.md](README.md) for the overall purpose and outcome. The original result tables and paired comparisons remain unchanged.
 
 The user-requested documentation refresh changes explanatory Markdown only. [Documentation change manifest](records/documentation_update_2026-10-19.json).
 <!-- agentic-run-status:end -->
 
 
-Completed 2026-10-19T20:23:20.102683+00:00. Pinned jev-1.13.0. Same 150 scheduled cases; 149 usable frozen price labels. All cases were already examined, so this is a paired development comparison.
+Pinned jev-1.13.0. Same 150 scheduled cases; 149 usable frozen price labels. All cases were already examined, so this is a paired development comparison.
 
 ## What changed
 

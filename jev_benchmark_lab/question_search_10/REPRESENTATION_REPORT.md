@@ -1,13 +1,13 @@
 # Jev input representation: percentages and summarized prose
 
 <!-- agentic-run-status:start -->
-**Final status - October 19, 2026:** This is a development follow-up to the unsuccessful pure agentic prompt/question-strategy optimization run. Percentages with descriptions and percentage-based prose did not improve overall accuracy over the raw JSON staged reference. A later correction translated the numbers into qualitative meanings; it reached 45.0% accuracy and improved probability scoring, but remained below the 54.4% market-only/always-up accuracy on these cases. See [QUALITATIVE_REPORT.md](QUALITATIVE_REPORT.md) and [the consolidated summary](README.md). The original comparisons below remain unchanged.
+**Final status:** This is a development follow-up to the unsuccessful pure agentic prompt/question-strategy optimization run. Percentages with descriptions and percentage-based prose did not improve overall accuracy over the raw JSON staged reference. A later correction translated the numbers into qualitative meanings; it reached 45.0% accuracy and improved probability scoring, but remained below the 54.4% market-only/always-up accuracy on these cases. See [QUALITATIVE_REPORT.md](QUALITATIVE_REPORT.md) and [the consolidated summary](README.md). The original comparisons below remain unchanged.
 
 The user-requested documentation refresh changes explanatory Markdown only. [Documentation change manifest](records/documentation_update_2026-10-19.json).
 <!-- agentic-run-status:end -->
 
 
-Completed 2026-10-19T20:10:35.274040+00:00. Model pinned to jev-1.13.0. One reference and exactly two requested representation variants; no tuning after scores.
+Model pinned to jev-1.13.0. One reference and exactly two requested representation variants; no tuning after scores.
 
 ## Interpretation
 

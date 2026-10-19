@@ -38,4 +38,4 @@ Everything remains in the existing `question_search_10/` folder tree. `represent
 
 ## Documentation refresh
 
-Documentation updated October 19, 2026, after the completed runs. The user requested this status refresh. Saved verification records describe the pre-edit snapshots; preservation checks may flag these named Markdown edits. The before/after hashes are recorded in [the documentation-change manifest](records/documentation_update_2026-10-19.json). Experiment code, frozen manifests, inputs, prices, API responses and scores were not changed. Regenerating an older report can overwrite its later editorial status note.
+Documentation updated after the completed runs. The user requested this status refresh. Saved verification records describe the pre-edit snapshots; preservation checks may flag these named Markdown edits. The before/after hashes are recorded in [the documentation-change manifest](records/documentation_update_2026-10-19.json). Experiment code, frozen manifests, inputs, prices, API responses and scores were not changed. Regenerating an older report can overwrite its later editorial status note.

@@ -1,7 +1,7 @@
 # Paired input trace: AAPL-2025-02-21-216bbb1456
 
 <!-- agentic-run-status:start -->
-This trace belongs to the unsuccessful agentic optimization experiment. It records the first presentation comparison; the later qualitative-meaning correction is in [the second complete trace](qualitative_example_apple_full_trace.md). See [README.md](README.md) for the final assessment. This documentation note was added October 19, 2026; the verbatim JSON blocks below are unchanged.
+This trace belongs to the unsuccessful agentic optimization experiment. It records the first presentation comparison; the later qualitative-meaning correction is in [the second complete trace](qualitative_example_apple_full_trace.md). See [README.md](README.md) for the final assessment. The verbatim JSON blocks below are unchanged.
 <!-- agentic-run-status:end -->
 
 

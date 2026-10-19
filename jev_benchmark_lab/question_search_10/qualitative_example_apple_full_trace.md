@@ -1,7 +1,7 @@
 # Qualitative wording: complete paired case trace
 
 <!-- agentic-run-status:start -->
-This trace records the corrected qualitative-meaning follow-up within the unsuccessful agentic optimization experiment. In this Apple case, the leading up probability fell from 73% to 61%, but the forecast remained wrong. The full rerun reached 45.0% accuracy versus a 54.4% baseline; see [QUALITATIVE_REPORT.md](QUALITATIVE_REPORT.md) and [README.md](README.md). This documentation note was added October 19, 2026; the verbatim JSON blocks below are unchanged.
+This trace records the corrected qualitative-meaning follow-up within the unsuccessful agentic optimization experiment. In this Apple case, the leading up probability fell from 73% to 61%, but the forecast remained wrong. The full rerun reached 45.0% accuracy versus a 54.4% baseline; see [QUALITATIVE_REPORT.md](QUALITATIVE_REPORT.md) and [README.md](README.md). The verbatim JSON blocks below are unchanged.
 <!-- agentic-run-status:end -->
 
 

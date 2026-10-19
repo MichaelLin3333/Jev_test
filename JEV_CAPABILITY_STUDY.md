@@ -1,7 +1,7 @@
 # What the Jev experiments demonstrate
 
 **A study of the saved experiments in `jev_model_eval` and `jev_benchmark_lab`**  
-Evidence reviewed through October 19, 2026. Tested model: **`jev-1.13.0`**. This study analyzes existing records; it makes no new Jev calls and does not tune against any final test.
+Tested model: **`jev-1.13.0`**. This study analyzes existing records; it makes no new Jev calls and does not tune against any final test.
 
 **Jev demonstrated useful, sometimes quite sharp business interpretation, but these experiments did not establish reliable additional information about subsequent five-session stock returns.** Its best original Jev-plus-market model produced a small, uncertain probability-score improvement. The later ten-iteration search failed to reach 70% accuracy: its chosen strategy scored 40% on a fresh 30-case test, predicted up for every case, and assigned worse probabilities than the market-only reference.
 

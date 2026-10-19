@@ -14,11 +14,11 @@ Other small scripts are manual API or collection helpers.
 
 ## Saved experiments
 
-| Folder | Contents |
+| Experiment | Contents |
 | --- | --- |
-| `qualitative_news_tests_2026-10-17/` | 27 cases, four-stage responses, qualitative findings, and rejected attempts |
-| `forced_choice_forecasts_2026-10-18/` | Forecast-only reruns, archived prices, and return scoring |
-| `experimental_market_mechanism_addon_2026-10-18/` | Fresh controls, added market questions, and paired comparisons |
+| [Qualitative news study](qualitative_news_tests_2026-10-17/) | 27 cases, four-stage responses, qualitative findings, and rejected attempts |
+| [Forced-choice forecasts](forced_choice_forecasts_2026-10-18/) | Forecast-only reruns, archived prices, and return scoring |
+| [Market-mechanism add-on](experimental_market_mechanism_addon_2026-10-18/) | Fresh controls, added market questions, and paired comparisons |
 
 Open each folder's `overview.json` or `summary.json` first; numbered JSON files contain individual cases. Earlier batch results are archived evidence, not a one-command batch runner.
 

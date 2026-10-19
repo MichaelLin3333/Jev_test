@@ -1,13 +1,13 @@
 # Ten iterations of Jev question-strategy optimization
 
 <!-- agentic-run-status:start -->
-**Final status - October 19, 2026:** This report records the ten-iteration portion of a pure agentic, RL-like feedback-and-selection run that optimized prompts and question strategies around fixed Jev weights. It failed to reach the 70% accuracy goal: best validation accuracy was 53.3%, and the selected configuration scored 40.0% on the fresh holdout, tying always-up. Later presentation tests also failed to establish an accuracy advantage. See [the consolidated folder summary](README.md) and [the latest qualitative report](QUALITATIVE_REPORT.md). The closed-run tables below remain unchanged.
+**Final status:** This report records the ten-iteration portion of a pure agentic, RL-like feedback-and-selection run that optimized prompts and question strategies around fixed Jev weights. It failed to reach the 70% accuracy goal: best validation accuracy was 53.3%, and the selected configuration scored 40.0% on the fresh holdout, tying always-up. Later presentation tests also failed to establish an accuracy advantage. See [the consolidated folder summary](README.md) and [the latest qualitative report](QUALITATIVE_REPORT.md). The closed-run tables below remain unchanged.
 
 The user-requested documentation refresh changes explanatory Markdown only. [Documentation change manifest](records/documentation_update_2026-10-19.json).
 <!-- agentic-run-status:end -->
 
 
-Completed 2026-10-19T16:07:05.737976+00:00. Model pinned to **jev-1.13.0**. Exactly **10** candidate iterations; stopped after iteration 10.
+Model pinned to **jev-1.13.0**. Exactly **10** candidate iterations; stopped after iteration 10.
 
 Best validation configuration: **1: market_aware_direct**, 24/45 correct (**53.3%**). Fresh 2026 holdout: 12/30 correct (**40.0%**), balanced accuracy 33.3%, Brier 0.9643, forecast coverage 100.0%.
 

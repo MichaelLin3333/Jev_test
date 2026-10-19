@@ -1,11 +1,11 @@
 # Jev benchmark-and-improvement experiment
 
 <!-- agentic-run-status:start -->
-**Scope update - October 19, 2026:** This report covers the initial benchmark, which found a small probability-score improvement with substantial uncertainty. Subsequent pure agentic, RL-like prompt and question-strategy optimization failed to meet the 70% accuracy objective or establish a reliable advantage over the baselines. Read [the latest run summary](question_search_10/README.md) for the ten-iteration search and later representation tests. The initial benchmark findings and saved tables below are unchanged.
+**Scope update:** This report covers the initial benchmark, which found a small probability-score improvement with substantial uncertainty. Subsequent pure agentic, RL-like prompt and question-strategy optimization failed to meet the 70% accuracy objective or establish a reliable advantage over the baselines. Read [the latest run summary](question_search_10/README.md) for the ten-iteration search and later representation tests. The initial benchmark findings and saved tables below are unchanged.
 <!-- agentic-run-status:end -->
 
 
-Report generated 2026-10-19T15:09:58.455823+00:00. Retrospective exploratory evidence; five companies, no prospective validation.
+Retrospective exploratory evidence; five companies, no prospective validation.
 
 ## Finding
 
